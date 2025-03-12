@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Viszelle Chacon">
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles//temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script defer src="scripts/temples.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="title-container">
+          <h1>Temples Album</h1>
+        </div>
+
+        <nav id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+          </ul>
+        </nav>
+        <div class="menu-activador">
+          <input type="checkbox" id="lanzador" />
+          <label id="menu-activador" for="lanzador" aria-label="Open menu">
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <div class="gallery-container">
+        <div class="card">
+          <figure>
+            <img src="images/salt-lake-temple.jpg" alt="temple of salt lake" />
+            <figcaption>Temple of Salt Lake City</figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <img
+              src="images/washintong-temple.jpg"
+              alt="temple of washington"
+            />
+            <figcaption>Temple of Washington</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img
+              src="images/albuquerque-temple.jpeg"
+              alt="temple of albuquerque"
+            />
+            <figcaption>Temple of Albuquerque</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/venezuela-temple.jpg" alt="temple of venezuela" />
+            <figcaption>Temple of Venezuela</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/ghana-temple.jpg" alt="temple of ghana" />
+            <figcaption>Temple of Ghana</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/india-temple.jpg" alt="temple of india" />
+            <figcaption>Temple of India</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/japan-temple.jpg" alt="temple of japan" />
+            <figcaption>Temple of Japan</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/tijuana-temple.jpg" alt="temple of tijuana" />
+            <figcaption>Temple of Tijuana</figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="images/puebla-temple.jpeg" alt="temple of puebla" />
+            <figcaption>Temple of Puebla</figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
+      <p>Last Updated: <span id="last-updated"></span></p>
+    </footer>
+  </body>
+</html>
