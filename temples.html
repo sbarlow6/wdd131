@@ -1,123 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Viszelle Chacon">
-    <meta name="description" content="WDD 131: Dynamic Web Fundamentals">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/temples.css" />
-    <link rel="stylesheet" href="styles/temples-large.css" />
-    <script defer src="scripts/temples.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="scripts/getdates.js"></script>
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Enoh Uwem Akpan">
+    <meta name="description" content="Week02 assignment on photo album.">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
     <header>
-      <div class="header-container">
-        <div class="title-container">
-          <h1>Temples Album</h1>
-        </div>
-
-        <nav id="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Old</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Small</a></li>
-          </ul>
+        <h1 class="logo">Temple Album</h1>
+        <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav>
+            <ul id="nav-menu" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
         </nav>
-        <div class="menu-activador">
-          <input type="checkbox" id="lanzador" />
-          <label id="menu-activador" for="lanzador" aria-label="Open menu">
-            <span class="menu-activador-linea"></span>
-            <span class="menu-activador-linea"></span>
-            <span class="menu-activador-linea"></span>
-          </label>
-        </div>
-      </div>
     </header>
+
     <main>
-      <h2>Home</h2>
-      <div class="gallery-container">
-        <div class="card">
-          <figure>
-            <img src="images/salt-lake-temple.jpg" alt="temple of salt lake" />
-            <figcaption>Temple of Salt Lake City</figcaption>
-          </figure>
-        </div>
-        <div class="card">
-          <figure>
-            <img
-              src="images/washintong-temple.jpg"
-              alt="temple of washington"
-            />
-            <figcaption>Temple of Washington</figcaption>
-          </figure>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img
-              src="images/albuquerque-temple.jpeg"
-              alt="temple of albuquerque"
-            />
-            <figcaption>Temple of Albuquerque</figcaption>
-          </figure>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="images/venezuela-temple.jpg" alt="temple of venezuela" />
-            <figcaption>Temple of Venezuela</figcaption>
-          </figure>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="images/ghana-temple.jpg" alt="temple of ghana" />
-            <figcaption>Temple of Ghana</figcaption>
-          </figure>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="images/india-temple.jpg" alt="temple of india" />
-            <figcaption>Temple of India</figcaption>
-          </figure>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="images/japan-temple.jpg" alt="temple of japan" />
-            <figcaption>Temple of Japan</figcaption>
-          </figure>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="images/tijuana-temple.jpg" alt="temple of tijuana" />
-            <figcaption>Temple of Tijuana</figcaption>
-          </figure>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="images/puebla-temple.jpeg" alt="temple of puebla" />
-            <figcaption>Temple of Puebla</figcaption>
-          </figure>
-        </div>
-      </div>
+        <h2>Home</h2>
+        <section class="pictures">
+            <figure>
+                <img src="images/aba-temple.jpeg" alt="Aba temple">
+                <figcaption>The Aba Nigerian Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-temple.jpeg" alt="Accra temple">
+                <figcaption>The Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/johannesburg-temple.jpeg" alt="Johannesburg temple">
+                <figcaption>The Johannesburg South-African Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpeg" alt="salt-lake temple">
+                <figcaption>The Salt-Lake City Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san-diago-temple.jpeg" alt="California temple">
+                <figcaption>San Diago California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/congo-temple.jpeg" alt="Congo temple">
+                <figcaption>The Kinshasa Democratic Republic of the Congo Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/durban-temple.jpeg" alt="Durban temple">
+                <figcaption>The Durban South Africa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cape-verde-temple.jpeg" alt="Cape-Verde temple">
+                <figcaption>The Praia Cape Verde Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ukrainian-temple.jpeg" alt="Ukraine temple">
+                <figcaption>The Kyiv Ukraine Temple</figcaption>
+            </figure>
+        </section>
     </main>
+
     <footer>
-      <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
-      <p>Last Updated: <span id="last-updated"></span></p>
+        <p id="year"></p>
+        <p id="lastModified"></p>
     </footer>
-  </body>
+    <script src="scripts/temples.js"></script>
+
+</body>
 </html>
