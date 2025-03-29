@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is to Discover Puerto Aysén, Chile – a stunning gateway to Patagonia. Explore its weather and data information.">
+    <meta name="author" content="Isaac Maldonado Soto">
+    <title>Puerto Aysen | WDD131</title>
+    <link rel="stylesheet" href="styles/place-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=M+PLUS+1:wght@100..900&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="scripts/place-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Puerto Aysen</h1>
+    </header>
+    <main>
+        <picture>
+            <!-- Imagen para pantallas grandes (1200px o más) -->
+            <source media="(min-width: 1200px)" srcset="images/large-puertoAysen.webp">
+            <!-- Imagen para pantallas medianas (768px o más) -->
+            <source media="(min-width: 768px)" srcset="images/medium-puertoAysen.webp">
+            <!-- Imagen para pantallas pequeñas (hasta 767px) -->
+            <source media="(max-width: 767px)" srcset="images/small-puertoAysen.webp">
+            <!-- Fallback para navegadores que no soportan <picture> -->
+            <img src="images/large-puertoAysen.webp" alt="Puerto Aysen">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <img src="images/data.svg" alt="data logo" width="100">
+            <p><span class="section-title">Location: </span>Southern Chile, Patagonia</p>
+            <p><span class="section-title">Population: </span>60,000 (Aysén Region).</p>
+            <p><span class="section-title">Climate: </span>Cold winters, mild summers; high rainfall.</p>
+            <p><span class="section-title">Economy: </span>Agriculture, livestock, fishing, tourism.</p>
+            <p><span class="section-title">Attractions: </span>Carretera Austral, Queulat National Park, General Carrera Lake.</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weathe-icon.svg" alt="weather Logo" width="100">
+            <p><span class="section-title">Climate: </span>Oceanic, with cold winters and mild summers.</p>
+            <p><span class="section-title">Temperatures: </span>10°C </p>
+            <p><span class="section-title">wind: </span>20 km/h</p>
+            <p><span class="section-title">Wind Chill: </span><span id="windChill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span>👾👾 Isaac Maldonado👾👾</p>
+        <p>Last Modification: <span id="lastModification"></span></p>
+    </footer>
+</body>
+</html>

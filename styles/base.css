@@ -1,169 +1,132 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swapstyles/base.css);
-* {
-    margin: 0;
-    padding: 0;
-}
+/*palette: https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-
-header h1 {
-    background-color: blue;
-    color: aqua;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-.highlight {
-    color: #fdd835;
-    font-weight: bold;
+header {
+  background-color: #264653;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  font-family: 'Domine';
+  margin-bottom: 20px;
 }
 
 nav {
-    background-color: rgb(5, 5, 5);
-    padding: 1.5rem;
+    margin-top: 0;
+    background-color: #78b9b1;
+}
+
+nav ul{
+    margin-top: 0;
+    list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
+    justify-content: space-around;
 }
 
-nav a:hover {
-    color: lightgreen;
-}
-
-nav a {
+nav a{
+    display: block;
+    text-align: center;
+    padding: 1rem;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    font-family: 'M PLUS 1';
+    color: black;
+    font-size: 22px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    text-shadow: #264653 1px 1px 1px;
+    color: #E76F51;
 }
 
 main {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.all-main {
-    margin: 30px;
-    width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.about-me {
-    border: 1px solid black;
-    border-radius: 0.7em 0.7em 0 0;
+section{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
 }
 
-.about-me-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+section h2{
+    background-color: #264653;
+    color: white;
+    font-family: 'Domine';
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.aboutme{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.aboutme p{
+    grid-column-start: 1;
+    grid-column-end: 3;
     padding: 20px;
+    text-align: justify;
+    font-size: 15px;
 }
-
-.title {
-    background-color: rgb(66, 35, 66);
-    color: aqua;
-    padding: 0.5rem;
-    border-radius: 0.4em 0.4em 0 0;
-    display: flex;
-    justify-content: center;
-}
-
-.about-me-card {
-    display: grid;
-
-}
-
-.about-me-card img {
-    width: 100px;
-    height: 120px;
-}
-
-.float {
-    float: left;
-}
-
-.card-location h2 {
-    text-decoration: underline;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.content img {
-    width: 160px;
-    height: 120px;
-}
-
-.content p {
-    padding: 0;
-    margin-right: 15px;
-}
-
-.flag {
-    margin-left: 15px;
-}
-
-.under {
-    font-size: xx-small;
-}
-
-/* .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-} */
-
-.card-resources {
-    border: 1px solid black;
-    border-radius: 0.7em 0.7em 0 0;
-}
-
-.card-resources h2 {
-    background-color: rgb(66, 35, 66);
-    color: aqua;
-    padding: 0.5rem;
-    border-radius: 0.4em 0.4em 0 0;
-    display: flex;
-    justify-content: center;
-}
-
-ul {
-    margin-top: 100px;
-    margin-left: 30px;
-    list-style-position: inside;
-}
-
-ul li {
-    margin-top: 10px;
-    text-decoration: underline;
-    color: blue;
-}
-
-li:hover {
-    background: violet;
+.profile{
     width: 200px;
+    background-color: #2A9D8F;
+    padding: 5px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: gray 5px 5px 5px;
+}
+
+.section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 1fr 10%;
+}
+
+.aboutme h2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.section2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.santiago-image{
+    width: 200px;
+    padding: 15px;
+}
+
+#santiago-text{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.card{
+    border: #264653 1px solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    background-color: navy;
-    color: aqua;
-    padding: 30px;
-}
-
-
-footer p:nth-of-type(2) {
-    color: rgb(236, 236, 236);
-    font-style: italic;
-    opacity: 0.8;
+    background-color: #264653;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
 }

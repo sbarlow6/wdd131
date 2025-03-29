@@ -3,80 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - Enoh Uwem Akpan. A course project showing my web development skills.">
-    <meta name="author" content="Rubia M. Francesco">
-    <title>WDD 131 | Dynamic Web Fundamentals | Enoh Uwem Akpan</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Isaac Maldonado</title>
+    <meta name="description" content="Welcome to my WDD 131 - Dynamic Web Fundamentals page! Here, I share insights from my learning journey, including web development projects, philosophical explorations, and personal initiatives. Whether you're interested in technology, entrepreneurship, or deep discussions, let's connect and collaborate!">
+    <meta name="author" content="Isaac Maldonado">
+    
+    <!-- Scripts -->
+    <script src="scripts/getdates.js" defer></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="scripts/getdates.js" defer></script>
+
+    <!-- Google Fonts (Optimiza si es necesario) -->
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=M+PLUS+1:wght@100..900&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Grotesk:wght@300..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="#">
 </head>
+
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Enoh Uwem Akpan</span></h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>Isaac Maldonado</span></h1>
         <nav>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/isaac-maldonado-soto-79b78b2a6/">LinkedIn</a></li>
+                <li><a href="">Favorite Books</a></li>
+                <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
         </nav>
     </header>
     
     <main>
-        <section class="all-main">
-            <section class="about-me">
-                <h2 class="title">About Me</h2>
-                <section class="card-about-me">
-                    <div class="about-me-content">
-                        <p>
-                            My name is Enoh and I'm so delighted whenever I get 
-                            to learn more about computing. I'm so about this opportunity
-                            to learn through BYU Pathway program. I really pray that I
-                            take this opportunity very seriously
-                        </p>
-                        <img src="images/enoh-suitable.jpg" alt="Enoh Uwem Akpan" class="profile-img">
-                    </div>
-                    <section class="card-location">
-                        <h2 class="heading">Port Harcourt, Nigeria</h2>
-                        <section class="content">
-                            <div class="flag float">
-                                <img src="images/nigeria.jpeg" alt="Official Flag of Nigeria" class="flag-img">
-                                <p class="under"><em>Official Flag and coat of arm of my beloved country, Nigeria.</em></p>
-                            </div>
-                            <p>
-                                Nigeria is a country in West Africa, known as Africa’s most 
-                                populous nation with over 200 million people. 
-                                Its capital is Abuja, while Lagos is its largest city and economic hub. 
-                                Nigeria has over 250 ethnic groups, with the Hausa-Fulani, Yoruba, 
-                                and Igbo being the largest.
-
-                                It gained independence from Britain in 1960 and has Africa’s largest economy, 
-                                driven by oil, agriculture, and tech. 
-                                Nigeria is famous for Nollywood (its film industry), Afrobeats music, 
-                                and cultural diversity. However, it faces challenges like corruption, 
-                                infrastructure deficits, and security issues.
-                            </p>
-                        </section>
-                    </section>
-                </section>
-            </section>
-            <section class="card-resources">
-                <h2>Web Dev Resources</h2>
-                <ul>
-                    <li><a href="#">Dev.to Community</a></li>
-                    <li><a href="#">Smashing Magazine</a></li>
-                    <li><a href="#">CSS Tricks</a></li>
-                    <li><a href="#">W3 Schools</a></li>
-                    <li><a href="#">Udemy</a></li>
-                    <li><a href="#">Image Placeholder</a></li>
-                </ul>
-            </section>
+        <section class="card aboutme section-container">
+            <h2>About Me</h2>
+            <p>Isaac Maldonado, from Santiago, Chile, is a student at Brigham Young University-Idaho, specializing in web and computer programming. Passionate about philosophy, he enjoys studying thinkers like Nietzsche and Aristotle and writing essays, stories, and novels exploring society and morality. His approach combines the logic of programming with the depth of philosophical thought.</p>
+            <img src="images/profile.jpeg" alt="a picture about me" class="profile">
+            <h3>Santiago, Chile</h3>
+            <img src="images/santiago.jpg" alt="santiago, Chile" class="santiago-image">
+            <p class="santiago-p" id="santiago-text">Santiago de Chile is the capital and largest city of Chile, located in a valley surrounded by the Andes Mountains. It is the country's political, economic, and cultural center, blending historic and modern architecture. The city offers a vibrant urban life, diverse cuisine, and easy access to nature, with nearby mountains and vineyards.</p>
+        </section>
+        <section class="card section2">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51">Colors</a></li>
+                <li><a href="https://www.w3schools.com/css/css_grid_item.asp">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN Web Docs</a></li>
+                <li><a href="https://stackoverflow.com/questions/39149846/why-am-i-seeing-a-404-not-found-error-failed-to-load-favicon-ico-when-not-usin">Stack overflow</a></li>
+                <li><a href="https://codepen.io/">codepen</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EiNiSFIPIQE">Grid on youtube</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ZOK-DU7vT0A">Flexbox on youtube</a></li>
+            </ul>
         </section>
     </main>
-    
     <footer>
-        
+        <p>©<span id="currentyear"></span> - Isaac Maldonado - Chile</p>
+        <p><span id = "lastModified"></span>👾👾</p>
     </footer>
-    <script src="getdates.js"></script>
 </body>
 </html>
