@@ -1,7 +1,5 @@
-window.onload = function() {
-    const d = new Date();
-    let year = d.getFullYear();
-    document.getElementById("currentyear").textContent = year;
-    let oLastModif = new Date(document.lastModified);
-    document.getElementById("lastModified").textContent = oLastModif;
-};
+var date = new Date ();
+var year = date.getFullYear();
+document.getElementById("currentyear").innerHTML = year;
+var date = document.lastModified;
+document.getElementById("lastmodified").innerHTML = date;
