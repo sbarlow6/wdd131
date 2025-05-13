@@ -1,111 +1,228 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header, footer {
-    background-color: #f0cdcd;
-    text-align: center;
-}
-
-h1 {
-    padding: 1rem;
-}
-
-nav {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-evenly; /*will space out my links evenly. Can be used if display is flex*/
-    background-color: rgb(94, 21, 21);
-}
-
-nav a {
-    list-style-type: none;
-    display: block;
-    color: white;
-    text-align: center; /*will align my text for my links to the center*/
-    padding: 1rem;
-    flex: 1 1 100%;
-    text-decoration: none;
-}
-
-nav a:hover {
-    border-radius: 0.5rem; /* this is to round out the corners of the border*/
-    border: 2px solid white;
-}
-
-main {
+/* General body setup with grid layout */
+body {
     display: grid;
-    grid-template-columns: .05% 59% 8% 39%;
-    margin: 2rem;
-    padding: 10px;
-    height: 30rem;
-    max-width: 2500px;
-}
-
-div {
-    text-align: left;
-    margin: 2rem;
-}
-
-.card img {
-    width: 200px;
-    height: auto;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(94, 21, 21);
-    border-radius: 1rem; /* this is to round out the corners of the border*/
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #333;
     color: white;
-    padding: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-
-.card {
+  }
+  
+  header h1 {
+    padding: 10px;
     text-align: center;
-    grid-column: 2/4;
-    border: 2px solid black;
-    border-radius: 1rem; /* this is to round out the corners of the border*/
-}
-
-main img {
-    border-radius: 0.5rem; /* this is to round out the corners of the border*/
-    width: 200px;
-    height: auto;
-    margin: 2rem;
-    float: right;
-}
-
-h3 {
+    font-size: 1.5rem;
+    font-weight:100;
+  }
+  
+/* Navigation menu*/
+nav {
+    background-color: black;
+ height: 40px;
+  }
+  
+  .nav-menu {
     display: flex;
     justify-content: center;
-    font-size: x-large;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    gap: 42px;
+  }
+  
+  .nav-menu li {
+    margin: 0 100px;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-menu a:hover {
     text-decoration: underline;
-}
-
-.utah img {
-    grid-column-start: 1;
-    float: left;
-    width: 200px;
-    height: auto;
-}
-
-ul {
-    text-align: left;
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.resources {
-    border: 2px solid black;
-    border-radius: 1rem; /* this is to round out the corners of the border*/
-    text-align: center;
-    grid-column: 4/6;
+  }
+  
+  /* Main content styling */
+  main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Card sections */
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-top: 70px; 
     position: relative;
-	width: 30rem;
-	height: 30rem;
-}
+    overflow: hidden;
+    flex: 1; 
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #005f8e;
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Content styles */
+  .card .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .card .content img {
+    max-width: 50%;
+    border-radius: 5px;
+  }
+  
+  .card .content .text {
+    flex: 1;
+  }
+  
+  .card h3 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .card hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .card .flag-section {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .card .flag-section img {
+    max-width: 50px;
+    border-radius: 5px;
+  }
+  
+  .card .flag-section p {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card li {
+    margin-bottom: 10px;
+  }
+  
+  .card li a {
+    color: #005f8e;
+    text-decoration: none;
+  }
+  
+  .card li a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-me .content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .about-me .content img {
+    max-width: 150px;
+    border-radius: 5px;
+  }
+  
+  .about-me h3 {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    color: #005f8e;
+  }
+  
+  .about-me hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  .about-me .flag-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .about-me .flag-section img {
+    max-width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .about-me .flag-section p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .resources ul {
+    padding-top: 80px ;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .resources ul li {
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  
+  .resources ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .resources ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  

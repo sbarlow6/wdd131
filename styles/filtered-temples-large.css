@@ -1,0 +1,38 @@
+@media only screen and (min-width: 768px) {
+    .nav-menu {
+      display: block;
+    }
+  
+    .nav-menu ul {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+  
+    .hamburger {
+      display: none;
+    }
+  
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 1rem; 
+    }
+    footer {
+        background-color: #4A148C;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 1rem;
+      }
+      
+      footer p {
+        margin: 5px 0;
+      }
+    }

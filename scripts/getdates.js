@@ -1,5 +1,4 @@
-var date = new Date ();
-var year = date.getFullYear();
-document.getElementById("currentyear").innerHTML = year;
-var date = document.lastModified;
-document.getElementById("lastmodified").innerHTML = date;
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+    
+// Populate the last modified date
+document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;

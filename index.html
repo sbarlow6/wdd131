@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Savanah Santos</title>
-    <meta name="description" content="This page was created in 2025 by Savanah Santos for her WDD131 - Dynamic Web Fundamentals class to
-        practice building a Home Web Page.">
-    <meta name="author" content="Savanah Santos">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Israel Ayomikun Asimi"/>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Israel Ayomikun Asimi. This page includes examples of dynamic web layouts, optimized images, and accessible design."
+    />
+    <title>WDD 131 - Dynamic Web Fundamentals - Israel Ayomikun Asimi</title>
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="./scripts/getdates.js" defer></script>
+  </head>
+  <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - Savanah Santos</h1>
-        <nav>
-            <a href="https://linkedin.com">LinkedIn</a>
-            <a href="https://byupw.instructure.com">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/22?lang=eng">Favorite Scripture</a>
-            <a href="https://linkedin.com">Final Project</a>
-
-        </nav>
+      <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+          </li>
+          <li>
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures"
+              target="_blank"
+              >Favorite Scripture</a
+            >
+          </li>
+          <li><a href="#" target="_blank">Final Project</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <div>
-            <img src="images/me.jpg" alt="Hello, my name is Savanah Santos">
-            <p>My name is Savanah Santos. I was born and raised in Southern Utah. I love being surrounded
-                by the mountains. I have been married for just over 8 years. I met my husband while serving
-                a mission for the Church of Jesus Christ of Latter Day Saints in Oklahoma. Thanks to my mission 
-                and marrying my husband, I am now fluent in the Spanish language. We now own a construction business 
-                called Santos Roofing & Construction. We don't have any children yet, but we have 15 full grown chickens,
-                10 baby chicks, 3 roosters, 4 dogs, and a cat!
+      <section class="card about-me">
+        <h2>About Me</h2>
+        <div class="content">
+          <div class="text">
+            <p>
+              My name is Israel and I go by Izy. I was born in Nigeria and live
+              with my family in Nigeria. I am currently working as a freelance
+              web developer. My family are my world, and I love spending time
+              with them. I love to travel and learn new things.
             </p>
-            </div>
-            <section class="utah">
-            <h3>Utah</h3>
-            <img src="images/utah.jpg" alt="utah">
-            <div>
-            <p>Utah is known for its scenic beauty. Surrounded by mountains, beautiful winters, and is also known as the behive 
-                state. It is also where the headquarters are located for the Church of Jesus Christ of Latter-Day Saints. There 
-                are many beautiful national parks with hiking trails. Many people travel to Utah to visit these locations.
-            </p>
-            </div>
-            </section>
-        </section>
-        <section class="resources">
-            <h2>Web Dev Resources</h2>
-            <ul>
-            <li><a href="https://www.youtube.com/watch?v=LdjsD27NOoo">Add Copyright</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/lastModified">Last Modified</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script#defer">"Defer" Boolean</a></li>
+          </div>
+          <img src="images/israel.jpg" alt="Israel's photo" />
+        </div>
+        <h3>Lagos, Nigeria</h3>
+        <hr />
+        <div class="flag-section">
+          <img src="images/nigeria_flag.jpg" alt="Official Flag of Nigeria" />
+          <p>
+            Nigeria is a multinational state inhabited by more than 250 ethnic
+            groups speaking 500 distinct languages, all identifying with a wide
+            variety of cultures. The three largest ethnic groups are the Hausa
+            in the north, Yoruba in the west, and Igbo in the east, together
+            constituting over 60% of the total population.
+          </p>
+        </div>
+      </section>
+      <section class="card resources">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+          <li>
+            <a href="https://www.smashingmagazine.com/" target="_blank"
+              >Smashing Magazine</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+          </li>
+          <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+          <li><a href="#" target="_blank">Image Placeholder</a></li>
         </ul>
-        </section>
+      </section>
     </main>
+
     <footer>
-        <p class="copyright">&copy;<span id="currentyear"></span> 💕Savanah Santos💕 Utah USA</p>
-        <p class="modified">Last modified: <span id="lastmodified"></span>
+      <p>
+        &copy; <span id="currentyear"></span> Israel Ayomikun Asimi, Nigeria
+      </p>
+      <p id="lastModified"></p>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+}
+
+.image-container {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 85vh;
+    object-fit: cover;
+    display: block;
+}
+
+.data, .weather {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.weather {
+    width: 250px;
+    bottom: 3%;
+    right: 1%;
+}
+
+.data {
+    width: 350px;
+    top: 3%;
+    left: 1%;
+}
+
+.data h2, .weather h2 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 10px -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather h2 {
+    width: 250px;
+}
+
+.data h2 {
+    width: 350px;
+}
+
+.weather-icon {
+    width: 40px;
+    height: auto;
+}
+
+.data p, .weather p {
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+footer {
+    background: #005f00;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        text-align: center;
+        height: auto;
+        padding: 0;
+    }
+
+    .image-container {
+        display: block;
+    }
+
+    .main-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .data, .weather {
+        position: static;
+        width: 100%;
+        margin: 20px auto;
+        background: transparent; 
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+
+    .data h2, .weather h2 {
+        background-color: transparent;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 100%;
+        margin-left: 2px;
+    }
+    .weather h2 {
+        flex-direction: column;
+    }
+
+    .weather-icon {
+        display: block;
+    }
+}

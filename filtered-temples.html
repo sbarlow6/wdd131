@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Immerse yourself in the 'Temple Album' – a stunning visual journey through iconic temples worldwide. Discover architectural beauty, cultural history, and breathtaking imagery.">
-    <meta name="author" content="Isaac Maldonado Soto">
-    <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="./styles/filtered-temples.css">
+  <link rel="stylesheet" href="./styles/filtered-temples-large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./scripts/filtered-temples.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Temple Album</h1>
-        <a id="menu" href="#"></a>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" id="navigation-home">Home</a></li>
-                <li><a href="#" id="navigation-old">old</a></li>
-                <li><a href="#" id="navigation-new">New</a></li>
-                <li><a href="#" id="navigation-large">Large</a></li>
-                <li><a href="#" id="navigation-small">Small</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Home</h2>
-        <div id="picture-section"></div>
-    </main>
-    <footer>
-        <p>©<span id="currentYear"></span>🎮🕹️👾 Isaac Maldonado Soto 🎮🕹️👾</p>
-        <p>Last Modification: <span id="lastModification"></span></p>
-    </footer>
-    <script src="scripts/filtered-temples.js" defer></script>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="hamburger-menu" class="hamburger">&#9776;</button>
+    <nav class="nav-menu">
+      <ul>
+        <li id="home">Home</li>
+        <li id="old">Old</li>
+        <li id="new">New</li>
+        <li id="large">Large</li>
+        <li id="small">Small</li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <section class="gallery">
+      <!-- Placeholder images and captions -->
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Israel Ayomikun Asimi, Nigeria
+    </p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
