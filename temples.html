@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
-  <link rel="stylesheet" href="./styles/temples.css">
-  <link rel="stylesheet" href="./styles/temples-large.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="./scripts/temples.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our beautiful Temple Album featuring pictures and captions of historic and modern temples.">
+    <meta name="author" content="Oluwatigbo Alao">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Temple Album</h1>
-    <button id="hamburger-menu" class="hamburger">&#9776;</button>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Home</h2>
-    <section class="gallery">
-      <!-- Placeholder images and captions -->
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple.jpeg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      &copy; <span id="currentyear"></span> Israel Ayomikun Asimi, Nigeria
-    </p>
-  <!-- Modification date code -->
-    <p id="lastModified"></p>
-  </footer>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Temples and Featured Temples</h2> 
+        <section>
+            <h3>Temples</h3> 
+            <figure>
+                <img src="images/temple1.webp" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.webp" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.webp" alt="Temple 3">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.webp" alt="Temple 4">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.webp" alt="Temple 5">
+                <figcaption>Temple 5</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>Featured Temples</h3>
+            <figure>
+                <img src="images/temple6.webp" alt="Temple 6">
+                <figcaption>Temple 6</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.webp" alt="Temple 7">
+                <figcaption>Temple 7</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.webp" alt="Temple 8">
+                <figcaption>Temple 8</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.webp" alt="Temple 9">
+                <figcaption>Temple 9</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple10.webp" alt="Temple 10">
+                <figcaption>Temple 10</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Oluwatigbo Alao, Nigeria.</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/get_dates.js" defer></script>
 </body>
 </html>

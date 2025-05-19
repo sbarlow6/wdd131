@@ -1,228 +1,95 @@
-/* General body setup with grid layout */
+/* Base CSS for WDD 131 Project */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight:400;
-    min-height: 100vh;
-  }
-  
-  /* Header styling */
-  header {
-    background-color: #333;
-    color: white;
-  }
-  
-  header h1 {
-    padding: 10px;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007BFF; 
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight:100;
-  }
-  
-/* Navigation menu*/
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
 nav {
-    background-color: black;
- height: 40px;
-  }
-  
-  .nav-menu {
     display: flex;
     justify-content: center;
+    background: #0056b3; 
+}
+
+nav ul {
     list-style: none;
-    margin: 0;
-    padding: 10px 0;
-    gap: 42px;
-  }
-  
-  .nav-menu li {
-    margin: 0 100px;
-  }
-  
-  .nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .nav-menu a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main content styling */
-  main {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  /* Card sections */
-  .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    padding-top: 70px; 
-    position: relative;
-    overflow: hidden;
-    flex: 1; 
-  }
-  
-  .card h2 {
-    font-size: 1.5rem;
-    color: white;
-    background-color: #005f8e;
-    padding: 15px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    border-radius: 5px 5px 0 0;
-  }
-  
-  /* Content styles */
-  .card .content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  .card .content img {
-    max-width: 50%;
-    border-radius: 5px;
-  }
-  
-  .card .content .text {
-    flex: 1;
-  }
-  
-  .card h3 {
-    margin-top: 20px;
-    font-size: 1.25rem;
-    color: #333;
-  }
-  
-  .card hr {
-    margin: 10px 0;
-    border: none;
-    border-top: 1px solid #ddd;
-  }
-  
-  .card .flag-section {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-  }
-  
-  .card .flag-section img {
-    max-width: 50px;
-    border-radius: 5px;
-  }
-  
-  .card .flag-section p {
-    flex: 1;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  
-  .card ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .card li {
-    margin-bottom: 10px;
-  }
-  
-  .card li a {
-    color: #005f8e;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
     text-decoration: none;
-  }
-  
-  .card li a:hover {
-    text-decoration: underline;
-  }
-  
-  .about-me .content {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #004494; 
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
     margin-bottom: 20px;
-  }
-  
-  .about-me .content img {
-    max-width: 150px;
-    border-radius: 5px;
-  }
-  
-  .about-me h3 {
-    font-size: 1.25rem;
-    margin-top: 20px;
-    color: #005f8e;
-  }
-  
-  .about-me hr {
-    border: 0;
-    border-top: 2px solid #ddd;
-    margin: 10px 0;
-  }
-  
-  .about-me .flag-section {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  .about-me .flag-section img {
-    max-width: 100px;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
-  .about-me .flag-section p {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .resources ul {
-    padding-top: 80px ;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .resources ul li {
-    margin-bottom: 10px;
-    line-height: 30px;
-  }
-  
-  .resources ul li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .resources ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  /* Footer styling */
-  footer {
-    background-color: #333;
-    color: white;
+    background: #f9f9f9;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+/* Image Styles */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
     text-align: center;
-    padding: 15px;
-    font-size: 1rem;
-  }
-  
-  footer p {
+    padding: 20px 0;
+    background: #007BFF; 
+    color: #fff;
+}
+
+footer p {
     margin: 5px 0;
-  }
-  
+}
