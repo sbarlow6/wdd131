@@ -1,5 +1,5 @@
-// Get the current year and set it in the footer
-document.getElementById('currentyear').textContent = new Date().getFullYear();
+console.log("JavaScript file is connected ✅");
 
-// Get the last modified date and set it in the footer
-document.getElementById('lastModified').textContent = document.lastModified;
+const yearSpan = document.getElementById("currentYear");
+yearSpan.textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;

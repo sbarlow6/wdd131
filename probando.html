@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 1rem;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            background-color: #1f4d78;
+            color: white;
+            padding: 10px;
+            margin-top: -20px;
+            margin-left: -20px;
+            margin-right: -20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .profile-pic {
+            float: right;
+            margin-left: 15px;
+            width: 100px;
+        }
+
+        .flag {
+            width: 80px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .caption {
+            font-size: 0.8em;
+            font-style: italic;
+        }
+
+        a {
+            display: block;
+            color: blue;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Left box -->
+        <div class="box">
+            <h2>About Me</h2>
+            <img src="your-image.jpg" alt="Profile photo" class="profile-pic">
+            <p>My name is Rubia and I go by Ruby. I was born in South Africa and live with my family in Madagascar. I am
+                currently working as an administrative legal assistant at a law firm...</p>
+
+            <h3>Toloria, Madagascar</h3>
+            <hr>
+            <img src="madagascar-flag.png" alt="Flag of Madagascar" class="flag">
+            <p>Madagascar is the 4th largest island in the world and is located in the Indian Ocean...</p>
+            <p class="caption">Official Flag of Madagascar</p>
+        </div>
+
+        <!-- Right box -->
+        <div class="box">
+            <h2>Web Dev Resources</h2>
+            <a href="#">Dev.to Community</a>
+            <a href="#">Smashing Magazine</a>
+            <a href="#">CSS Tricks</a>
+            <a href="#">W3 Schools</a>
+            <a href="#">Udemy</a>
+            <a href="#">Image Placeholder</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
