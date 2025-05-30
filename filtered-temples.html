@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/filtered-styles.css" />
+  <link rel="stylesheet" href="styles/filtered-styles-large.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="scripts/filtered-script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu-button">&#9776;</button>
+    <button onclick="filterTemples('home')">Home</button>
+    <button onclick="filterTemples('old')">Old</button>
+    <button onclick="filterTemples('new')">New</button>
+    <button onclick="filterTemples('large')">Large</button>
+    <button onclick="filterTemples('small')">Small</button>
+
+
+    <nav id="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples</h1>
+    <div id="temple-cards" class="container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Elías Cabeza de Vaca | Guayaquil, Ecuador</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

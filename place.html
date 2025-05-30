@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place - Ecuador</title>
+  <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals week 3 page for Elias Octavio Cabeza de Vaca Lopez country page responsive design project">
+  <meta name="author" content="Elias Octavio Cabeza de Vaca Lopez">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Explore Ecuador</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Culture</a>
+            <a href="#">Tourism</a>
+            <a href="#">Weather</a>
+        </nav>
+    </header>
+
+    <main>
+    <section class="hero">
+        <picture>
+            <source srcset="images/guayaquil-hero-mobile.webp" media="(max-width: 600px)" />
+            <img src="images/guayaquil-hero-desktop.webp" alt="Landscape of Ecuador"/>
+        </picture>
+    </section>
+
+    <section class="info">
+        <h2>Welcome to Ecuador</h2>
+        <p>Ecuador is a vibrant country with stunning biodiversity, rich culture, and history.</p>
+    </section>
+
+    <section class="weather">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <p>Temperature: <span id="temperature">18</span>°C</p>
+        <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+        <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+        <img src="images/2682849_cloud_cloudy_day_forecast_sun_icon.svg" class="svg-icon" alt="Partly cloudy weather"/>
+    </section>
+</main>
+
+    <footer>
+  <p>🌴	 Elías Cabeza de Vaca –  🔆	Guayaquil, Ecuador  📍  🇪🇨  | &copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+
+

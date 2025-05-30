@@ -1,69 +1,54 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Hernan Ortega Castro</title>
-    <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elías, home page with HTML, CSS and JS"/>
+    <meta name="author" content="Elías Cabeza de Vaca"/>
+    <title>WDD 131 - Dynamic Web Fundamentals - Elías</title>
+    <link rel="stylesheet" href="styles/base.css"/>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-<header>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals</h1>
+        <nav>
+            <a href="https:www.linkedin.com/in/elías-cabeza-de-vaca-0062832b6/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng/">Scripture</a>
+            <a href="#">Final Project</a> 
+        </nav>
+    </header>
     
-    <h1>WDD 131 - Dynamic Web Fundamentals - <span class="resaltado">Hernán Ortega Castro</span></h1>
-    <nav>
-        <ul class="navigation">
-            <li><a href="#" title="linkedin">linkedin</a></li>
-            <li><a href="#" title="Canvas">Canvas</a></li>
-            <li><a href="#" title="Scripture">Scripture</a></li>
-            <li><a href="#" title="Final Project">Final Project</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
+        <section class="card">
+            <h2>About me</h2>
+            <img src="images/Perfil.jpg" alt="My photo">
+            <p>Hi, Hi, I'm Elías from Guayaquil, Ecuador. I'm currently studying Software Development 
+                through BYU-Pathway. I served in the Colombia Bogotá South Mission from 2021 to 2024. 
+                I enjoy learning about technology, and I also have a deep interest in physics and movies. 
+                I've been practicing karate since I was six years old.
+            </p> 
+        </section>
 
-<div class="container">
-    <!-- Left box -->
-    <div class="leftbox">
-        <h2>About Me</h2>
-        
-          <div class="Profile">
-          <p>Hello! I’m Hernan Ortega Castro, originally from Colombia and currently living in Puerto Colombia with my family. I work
-        as a mathematics trainer and truly enjoy helping others deepen their understanding of math. In my free time, I love
-        staying active either it’s hitting the gym or going for a run. Above all, my family is my greatest joy. <br><span class="resaltado2">Puerto Colombia, Colombia</span> <br></p><hr>
-           <img src="images/profilepicture.jpg" alt="Profile photo" class="profile-pic">
-          
-          </div>
-
-         <div class="Colombia">
-                   
-         <img src="images/colombiaFlag.jpg" alt="Flag of Colombia" class="flag"> <p class="caption">Official Flag of Colombia </p> 
-          <p class="textColombia">Colombia is nicknamed the "gateway to South America" because it sits in the northwestern
-            part of the continent where South America connects with Central and North America.
-            With its vast rain forests, sprawling savannas, huge mountains, and 1,800 miles of
-            coastline on two oceans, Colombia is one of the most biologically diverse countries on Earth. </p>
-        </div>
-        
-    </div>
-
-    <!-- Right box -->
-    <div class="rightbox">
-        <h2>Web Dev Resources</h2>
-        <div class="viñeta">
-          <ul>
-              <li><a href="#">Dev.to Community</a> </li>
-              <li><a href="#">Smashing Magazine</a></li>
-              <li><a href="#">CSS Tricks</a></li>
-              <li><a href="#">W3 Schools</a></li>
-              <li><a href="#">Udemy</a></li>
-              <li><a href="#">Image Placeholder</a></li>
-           </ul>
-        </div>
-    </div>
-</div>
-<footer >    
-    <p>&copy; <span id="currentYear"></span> 🧮 Hernan Ortega 🧮 Castro</p>
-    <p  id="lastModified"></p>
-    <script src="scripts/getdates.js"></script>
-</footer>
+        <section class="card">
+            <h2>My Interests</h2>
+            <img src="images/worldbuilding.jpg" alt="My hobbies">
+            <p>When I'm not studying, I get lost in the things I love—more than just hobbies, 
+                they feel like a part of who I am. I play the zampoña, an Andean flute, and I 
+                continue to train in karate—I'm now a black belt. I also enjoy creating fantasy worlds,
+                 inspired by stories like The Lord of the Rings, Game of Thrones, and the mythologies of Ancient America
+                 and Pre-Columbian Cultures.
+            </p> 
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Elías Cabeza de Vaca, Ecuador</p>
+        <p id="lastModified"></p>
+      </footer>
+    
 </body>
+
+</body>
+
 </html>

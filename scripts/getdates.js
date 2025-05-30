@@ -1,5 +1,6 @@
-console.log("JavaScript file is connected ✅");
+const yearSpan = document.getElementById("currentyear");
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
 
-const yearSpan = document.getElementById("currentYear");
-yearSpan.textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
+const lastModified = document.lastModified;
+document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
