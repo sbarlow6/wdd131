@@ -1,6 +1,6 @@
-const yearSpan = document.getElementById("currentyear");
-const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
+var string = new Date().getFullYear()
+document.getElementById("currentyear").textContent = `@ ${string}`;
 
-const lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+document.getElementById("lastModified").textContent = "Last modification: " + document.lastModified;
+
+document.getElementById("course-title").textContent = "WDD 131: Dynamic Web Fundamentals - "

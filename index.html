@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elías, home page with HTML, CSS and JS"/>
-    <meta name="author" content="Elías Cabeza de Vaca"/>
-    <title>WDD 131 - Dynamic Web Fundamentals - Elías</title>
-    <link rel="stylesheet" href="styles/base.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Faith Oluwatise Idowu</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals || This home page was created for an assignment in WDD 131 by Faith Oluwatise Idowu. Inorder to share information about himself and his country. This page also contains links to various other websites where you might be able to find more information about me.">
+    <meta name="author" content="Faith Oluwatise Idowu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>WDD 131: Dynamic Web Fundamentals</h1>
+   <header>
+        <div class="title">
+            <h1><span id="course-title"></span>
+            Faith Oluwatise Idowu</h1>
+        </div>
+        
         <nav>
-            <a href="https:www.linkedin.com/in/elías-cabeza-de-vaca-0062832b6/">LinkedIn</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
             <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng/">Scripture</a>
-            <a href="#">Final Project</a> 
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
-    </header>
-    
-    <main>
-        <section class="card">
-            <h2>About me</h2>
-            <img src="images/Perfil.jpg" alt="My photo">
-            <p>Hi, Hi, I'm Elías from Guayaquil, Ecuador. I'm currently studying Software Development 
-                through BYU-Pathway. I served in the Colombia Bogotá South Mission from 2021 to 2024. 
-                I enjoy learning about technology, and I also have a deep interest in physics and movies. 
-                I've been practicing karate since I was six years old.
-            </p> 
-        </section>
-
-        <section class="card">
-            <h2>My Interests</h2>
-            <img src="images/worldbuilding.jpg" alt="My hobbies">
-            <p>When I'm not studying, I get lost in the things I love—more than just hobbies, 
-                they feel like a part of who I am. I play the zampoña, an Andean flute, and I 
-                continue to train in karate—I'm now a black belt. I also enjoy creating fantasy worlds,
-                 inspired by stories like The Lord of the Rings, Game of Thrones, and the mythologies of Ancient America
-                 and Pre-Columbian Cultures.
-            </p> 
-        </section>
-    </main>
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Elías Cabeza de Vaca, Ecuador</p>
-        <p id="lastModified"></p>
-      </footer>
-    
+   </header> 
+   <main>
+        <div class="cards">
+            <section class="card1">
+                <h2>About Me</h2>
+                <article class="me">
+                    <img src="images/profile.jpg" alt="A picture of me">
+                    <p>My name is Faith. I'm from West Africa and I live with my family in Ogun state, Nigeria. I am currently taking a course on Softwaree development with Byu-Idaho. I love playing video games and watching movies, and I'm currently aspiring to become a game developer.</p>
+                </article>
+                <h3>Ogun state, Nigeria</h3>
+                <article class="country">
+                    <figure>
+                        <img src="images/nigeriaflag.png" alt="Flag of Nigeria">
+                        <figcaption>The flag of Nigeria</figcaption>
+                    </figure>
+                    <p>Nigeria is a country in West Africa and the most populous country in Africa, with over 200 million people. Its capital is Abuja, and its largest city is Lagos. Nigeria is known for its diverse cultures, languages (over 500), and ethnic groups, including the Yoruba, Hausa, and Igbo.</p>
+                </article>
+            </section>
+            <section class="card2">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to">Dev. to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
+   </main>
+   <footer>
+        <p><span id="currentyear"></span> 🔗 Faith Oluwatise Idowu 🔗 Nigeria</p>
+        <p><span id="lastModified"></span></p>
+   </footer>
 </body>
-
-</body>
-
 </html>
