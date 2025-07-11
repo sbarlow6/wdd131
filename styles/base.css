@@ -1,198 +1,173 @@
-:root{
-    --primary-color: #3a976c;
-    --secondary-color: #0c0a0a;
-    --accent1-color: #ffffff;
-    --accent2-color: #e5ff00;
-    --heading-font: "Open Sans", sans-serif;
-    --body-font: "Roboto", sans-serif;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-}
+/* :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+} */
 
 body {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 1100px;
-    font-family: var(--body-font);
-    height: 100%;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
-.title {
-    text-align: center;
-    padding-top: 10px ;
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 50px;
-    font-size: 23px;
-    font-weight: bolder;
-}
-header h1{
-    display: inline;
-    font-size: 23px;
-    font-weight: lighter;
-    color: var(--accent2-color);
-}
-#current-title{
-    display: inline;
-    color: black;
-}
-header nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    text-align: center;
-}
-
-header nav a {
-    width: 25%;
-    text-align: center;
-    font-size: small;
-    color: var(--accent1-color);
-    text-decoration: none;
-    border: 1px solid var(--black-color);
-    background-color: var(--secondary-color);
-    padding: 15px;
-}
-
-header nav a:hover{
-    text-decoration: none;
-    background-color: gray;
-    border-radius: 7px;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 main {
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.cards {
+.header-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(17, 39, 59);
+    gap: 0.3rem;
+}
+
+.Header-caption-text {
+    color: white;
+}
+
+.caption-author {
+    color: rgb(247, 206, 23);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.nav-links {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(36, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: rgba(247, 195, 23, 0.699);
+}
+
+.grid-content {
     display: grid;
-    grid-template-columns: 700px 300px;
-    grid-gap: 100px;
-    margin-top: 20px;
-}
-.card1, .card2{
-    position: relative;
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;
-    background-color: var(--primary-color);
-    height: 530px;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-h2 {
+.card {
+    padding: 0px 0px 20px 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.intro-caption {
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(17, 39, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.personal-and-byu-intro-container {
+    padding: 2rem;
+}
+
+.personal-intro {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.write-up-and-hr {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.h-rule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+.h-rule-container h2 {
     text-align: center;
-    margin: 0 auto;
-    height: 60px;
-    color: var(--accent1-color);
-    padding-top: 17px;
 }
 
-.me img{
-    width: 150px;
-    float: right;
-    height: 190px;
-    margin-right: 30px;
-}
-
-.country img{
-    width: 200px;
-    height: 140px;
-}
-
-.card1 h3 {
-    text-decoration-line: underline;
-    background-color: var(--accent1-color);
-    padding-top: 70px;
-}
-.card1 article {
-    display: block;
-    background-color: var(--accent1-color);
-}
-
-.card1 article figure{
-    width: 100px;
-    float: left; 
-}
-
-.me {
-    padding-top: 25px;
-}
-
-.me p {
-    text-align: justify;
-    width: 450px;
-    margin-left: 20px;
-    margin-top: 10px;
-    font-size: large;
-}
-
-.country {
-    padding-top: 9px;
-    margin: 0 auto;
-    padding-left: 60px;
-}
-
-.country p{
-    padding-top: 10px;
-    text-align: justify;
-    width: 350px;
-    margin:0 auto;
-    height: 180px;
-    margin-right: 90px;
-    font-size: large;
-}
-
-figure{
-    float: right;
-    margin-left: -30px;
-    background-color: var(--accent1-color);
-}
-figcaption{
-    font-size: small;
-    margin: 0 auto;
+.h-rule {
+    width: 96%;
     text-align: center;
-    width:200px;
 }
 
-.card2 ul{
-    background-color: var(--accent1-color);
-    padding-top: 120px;
-    padding-bottom: 160px;
-    text-align: justify;
+.company-intro {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 1rem;
 }
 
-.card2 li{
-    margin-left: 40px;
-    margin-bottom: 5px;
+.empty-div {
+    width: 100%;
 }
 
-.card2 a{
-    margin: 0;
-    text-align: justify;
-    text-decoration: none;
+.byu-image-container h5 {
+    text-align: center;
 }
 
-.card2 a:hover {
-    margin: 0;
-    text-align: justify;
-    text-decoration: none;
-    color: purple;
+.second-card-heading {
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(17, 39, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
 }
 
-footer{
-    background-color: var(--primary-color);
-    margin-top: 20px;
+.web-dev-resource-container {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: black;
+.footer {
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(17, 39, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#lastModified{
-    color: black;
+.footer p {
+    color: white;
 }
+
+.footer h5 {
+    color: rgb(247, 206, 23);
+}
+
+
+/* Header End */

@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temple Album</title>
-  <link rel="stylesheet" href="styles/temple.css" />
-  <link rel="stylesheet" href="styles/temple-large.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="scripts/temple.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temple Album</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 900px)">
+    <script defer src="scripts/temples.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Temple Album</h1>
-    <button id="menu-button">&#9776;</button>
-    <nav id="nav-menu">
-      <a href="#">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Temples</h1>
-    <div class="container">
-      <figure><img src="images/Uruguay-templo.jpg" alt="Temple Name" /><figcaption>Asunción, Paraguay</figcaption></figure>
-      <figure><img src="images/Bogota-templo.jpg" alt="Temple Name" /><figcaption>Bogota, Colombia</figcaption></figure>
-      <figure><img src="images/Buenos Aires-templo.jpg" alt="Temple Name" /><figcaption>Buenos Aires, Argentina</figcaption></figure>
-      <figure><img src="images/Caracas-templo.jpg" alt="Temple Name" /><figcaption>Caracas, Venezuela</figcaption></figure>
-      <figure><img src="images/Cochabamba-templo.jpg" alt="Temple Name" /><figcaption>Cochabamba, Bolivia</figcaption></figure>
-      <figure><img src="images/Concepcion-templo.jpg" alt="Temple Name" /><figcaption>Concepción, Chile</figcaption></figure>
-      <figure><img src="images/Guayaquil-templo.jpg" alt="Temple Name" /><figcaption>Guayaquil, Ecuador</figcaption></figure>
-      <figure><img src="images/Lima-templo.jpg" alt="Temple Name" /><figcaption>Lima, Perú</figcaption></figure>
-      <figure><img src="images/Uruguay-templo.jpg" alt="Temple Name" /><figcaption>Montevideo, Uruguay</figcaption></figure>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="year"></span> | Elías Cabeza de Vaca | Guayaquil, Ecuador</p>
-    <p>Last Modified: <span id="last-modified"></span></p>
-  </footer>
+    <header>
+        <div class="header-content">
+            <h2 class="site-title">Temple Album</h2>
+            <button id="hamburger" aria-label="Open navigation menu">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+            <nav id="main-nav" class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+                <button id="close-nav" aria-label="Close navigation menu" class="close-nav">&times;</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>World Temples Picture Album</h1>
+        <section class="album-grid">
+            <figure>
+                <img src="images/temple-Alaska.jpg" alt="Alaska Temple">
+                <figcaption>Alaska Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-Alaska-2.jpg" alt="Alaska Temple 2">
+                <figcaption>Alaska Temple 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-Mexico.jpg" alt="Mexico Temple">
+                <figcaption>Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temtle-aba-1.jpg" alt="Aba Temple 1">
+                <figcaption>Aba Temple 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temtle-aba-2.jpg" alt="Aba Temple 2">
+                <figcaption>Aba Temple 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temtle-aba-3.jpg" alt="Aba Temple 3">
+                <figcaption>Aba Temple 3</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temtle-Austria-1.jpg" alt="Austria Temple">
+                <figcaption>Austria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temtle-ghana-1.jpg" alt="Ghana Temple">
+                <figcaption>Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple-Alaska-2.jpg" alt="BYU Temple">
+                <figcaption>BYU Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer class="footer">
+        <p></p>
+        <h5></h5>
+    </footer>
 </body>
+
 </html>

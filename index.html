@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals - Faith Oluwatise Idowu</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals || This home page was created for an assignment in WDD 131 by Faith Oluwatise Idowu. Inorder to share information about himself and his country. This page also contains links to various other websites where you might be able to find more information about me.">
-    <meta name="author" content="Faith Oluwatise Idowu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Augustine Ugohukwu Odoemene</title>
+    <meta name="author" content="Augustine Ugochukwu">
+    <meta name="description"
+        content="This is a landing page for WDD 131 - Dynamic Web Fundamental course created by Augustine Ugochukwu Odoemene" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet" />
     <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-   <header>
-        <div class="title">
-            <!-- <h1>
-                WDD 131 - Dynamic Web Fundamentals - 
-                <span class="highlight-name">Akhabue Onome Matthew</span>
-            </h1> -->
-            <span id="course-title"></span>
-            <!-- <h1>Samuel Barlow</h1> -->
+    <header>
+        <div class="header-caption">
+            <h3 class="Header-caption-text" id="course-title"></h3>
             
         </div>
-        
-        <nav>
-            <a href="https://www.linkedin.com">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-            <a href="#">Final Project</a>
+        <nav class="nav-links">
+            <a href="https://www.linkedin.com/in/augustine-ugochukwu-2b4371218/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/courses/13857">Canvas</a>
+            <a href=" https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="https://github.com/prominentmajesty/wdd131">Final Project</a>
         </nav>
-   </header> 
-   <main>
-        <!-- <span id="course-title"></span> -->
-        <h1>Samuel Barlow</h1>
-        <div class="cards">
-            <!-- <h1>Faith Oluwatise Idowu</h1> -->
-            <section class="card1">
+    </header>
+
+    <main class="grid-content">
+        <section class="caption-author"><h1> Augustine Ugochukwu Odoemene</h1></section>
+        <section class="card first-card">
+            <div class="intro-caption">
                 <h2>About Me</h2>
-                <article class="me">
-                    <img src="images/profile.jpg" alt="A picture of me">
-                    <p>My name is Faith. I'm from West Africa and I live with my family in Ogun state, Nigeria. I am currently taking a course on Softwaree development with Byu-Idaho. I love playing video games and watching movies, and I'm currently aspiring to become a game developer.</p>
-                </article>
-                <h3>Ogun state, Nigeria</h3>
-                <article class="country">
-                    <figure>
-                        <img src="images/nigeriaflag.png" alt="Flag of Nigeria">
-                        <figcaption>The flag of Nigeria</figcaption>
-                    </figure>
-                    <p>Nigeria is a country in West Africa and the most populous country in Africa, with over 200 million people. Its capital is Abuja, and its largest city is Lagos. Nigeria is known for its diverse cultures, languages (over 500), and ethnic groups, including the Yoruba, Hausa, and Igbo.</p>
-                </article>
-            </section>
-            <section class="card2">
+            </div>
+            <div class="personal-and-byu-intro-container">
+                <div class="personal-intro">
+                    <div class="write-up-and-hr">
+                        <p> My name is Augustine Ugochukwu Odoemene. I am from Nigeria, West African Region and i live
+                            alone
+                            in Owerri the capital city of Imo State, in Eastern Nigeria. I am currently serving as a
+                            Ward
+                            clerk in the Church of Jesus Christ of Later Day Saints, Akwakuma Ward, Owerri North Stake,
+                            and
+                            i am also the Chief Executive Officer (CEO) of DANVA-AI. An AI company in Owerri Imo State,
+                            Nigeria. I love serving, Teaching, Learning, Team work and Productivity.
+                        </p>
+                        <div class="h-rule-container">
+                            <h2>wdd131, Dynamic Web Fundamental</h2>
+                            <hr class="h-rule" />
+                        </div>
+                    </div>
+                    <img src="images/resize-profile.jpg" alt="" class="profile-image" />
+                </div>
+                <div class="company-intro">
+                    <div class="byu-image-container">
+                        <img src="images/byu.jpg" alt="" class="byu-image" />
+                        <h5>Official Image Icon of BYU</h5>
+                    </div>
+                    <p>WDD 131 is a course called Dynamic web Fundamental which is offered by BYU students that are
+                        offering Web development as their first certificate course on the journey of acquiring a
+                        bachellor degree in Software Developement
+                    </p>
+                    <div class="empty-div"></div>
+                </div>
+            </div>
+        </section>
+        <section class="card second-card">
+            <div class="second-card-heading">
                 <h2>Web Dev Resources</h2>
+            </div>
+            <div class="web-dev-resource-container">
                 <ul>
-                    <li><a href="https://dev.to">Dev. to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
                     <li><a href="#">Image Placeholder</a></li>
                 </ul>
-            </section>
-        </div>
-   </main>
-   <footer>
-        <p><span id="currentyear"></span> 🔗 Faith Oluwatise Idowu 🔗 Nigeria</p>
-        <p><span id="lastModified"></span></p>
-   </footer>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p></p>
+        <h5></h5>
+    </footer>
+
 </body>
+
 </html>
