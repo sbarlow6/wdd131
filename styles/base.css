@@ -1,173 +1,346 @@
-/* :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
-    --background-color: #f9f9f9;
-} */
-
-body {
-    line-height: 1.6;
-    overflow-x: hidden;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
-
+/* 🔄 Reset and Box Model */
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* 🌍 Body Styling */
+body {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e6f7ff, #ffffff);
+  color: #002147;
+  line-height: 1.6;
+}
+
+/* 🖼 Universal Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* 🔧 Layout Containers */
+.holy-grail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.holy-grail-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🧭 Header & Navigation */
+header {
+  background: linear-gradient(to right, #1a5276, #2874a6);
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  background-color: #002147;
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+nav a:hover {
+  background-color: #d0e7f5;
+  color: #002147;
+  border-color: #87ceeb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a:focus {
+  outline: 2px dashed #D0E7F5;
+  outline-offset: 4px;
+}
+
+/* 📄 Main Content */
 main {
-    max-width: 1200px;
-    margin: auto;
+  flex: 1;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
 }
 
-.header-caption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    background-color: rgb(17, 39, 59);
-    gap: 0.3rem;
+h1 {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+  color: #1a5276;
+  font-size: 2.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #2874a6;
+  display: inline-block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Header-caption-text {
-    color: white;
-}
-
-.caption-author {
-    color: rgb(247, 206, 23);
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
-}
-
-.nav-links {
-    width: 100%;
-    height: 8vh;
-    background-color: rgb(36, 34, 34);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-links a:hover {
-    color: rgba(247, 195, 23, 0.699);
-}
-
-.grid-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
+/* 📦 Card Layout */
+.holy-grail-columns {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 .card {
-    padding: 0px 0px 20px 0px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+  background: linear-gradient(145deg, #ffffff, #f5fbff);
+  border: 1px solid #87ceeb;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 33, 71, 0.1);
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 320px;
+  max-width: 520px;
+  margin: 1rem;
+  overflow: hidden;
 }
 
-.intro-caption {
-    width: 100%;
-    height: 7vh;
-    background-color: rgb(17, 39, 59);
-    display: flex;
-    justify-content: center;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 33, 71, 0.15);
+}
+
+.card h2 {
+  background: linear-gradient(to right, #1a5276, #2874a6);
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  margin: -1.5rem -2rem 1.5rem -2rem;
+  font-size: 1.8rem;
+}
+
+.card p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card ul {
+  padding-left: 1.8rem;
+  list-style-type: none;
+  color: #002147;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.card li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.card li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2874a6;
+  font-weight: bold;
+}
+
+.card a {
+  color: #1a5276;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.card a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+/* 🧠 Web Resources Card Image Centering */
+.card .resources-img {
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  width: 85%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+}
+
+/* 👤 About Section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.profile-img {
+  width: 280px;
+  max-width: 100%;
+  border: 4px solid #2874a6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  width: 100%;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* 🏙 City Images */
+.city-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.city-images img {
+  width: 160px;
+  object-fit: cover;
+  border: 2px solid #2874a6;
+  transition: transform 0.3s ease;
+}
+
+.city-images img:hover {
+  transform: scale(1.05);
+}
+
+/* 📞 Footer */
+footer {
+  background: linear-gradient(to right, #1a5276, #2874a6);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .holy-grail-columns {
+    flex-direction: column;
     align-items: center;
-    color: white;
-}
+    gap: 1.5rem;
+  }
 
-.personal-and-byu-intro-container {
-    padding: 2rem;
-}
-
-.personal-intro {
-    display: flex;
-    gap: 1.7rem;
-}
-
-.write-up-and-hr {
-    display: flex;
+  .about-content {
     flex-direction: column;
-    gap: 5rem;
-}
+    align-items: center;
+    text-align: center;
+  }
 
-.h-rule-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+  .profile-img {
+    max-width: 300px;
+  }
+
+  .city-images {
     justify-content: center;
-}
+    flex-direction: row;
+    gap: 1rem;
+  }
 
-.h-rule-container h2 {
+  .city-images img {
+    width: 140px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  nav a {
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
     text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .card {
+    max-width: 100%;
+    min-width: auto;
+    margin: 0.5rem 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
 }
 
-.h-rule {
-    width: 96%;
-    text-align: center;
-}
-
-.company-intro {
-    display: flex;
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
     gap: 0.5rem;
-    padding-top: 1rem;
-}
-
-.empty-div {
-    width: 100%;
-}
-
-.byu-image-container h5 {
-    text-align: center;
-}
-
-.second-card-heading {
-    width: 100%;
-    height: 7vh;
-    background-color: rgb(17, 39, 59);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-.web-dev-resource-container {
-    width: 100%;
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer {
-    width: 100%;
-    height: 12vh;
-    background-color: rgb(17, 39, 59);
-    display: flex;
+  }
+  
+  nav a {
+    width: 90%;
+  }
+  
+  .city-images {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+  
+  .city-images img {
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  #course-title {
+    font-size: 1.3rem;
+  }
 }
 
-.footer p {
-    color: white;
+/* 🕰 Last Modified Date Style */
+#lastModified {
+  font-style: italic;
+  color: #d0e7f5;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
 }
-
-.footer h5 {
-    color: rgb(247, 206, 23);
-}
-
-
-/* Header End */
