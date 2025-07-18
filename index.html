@@ -1,73 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Diliana Thompson</title>
-  <meta name="author" content="Diliana Thompson">
-  <meta name="description" content="WDD 131 course project page by Diliana Thompson. Explore responsive web design, HTML, CSS, and JavaScript techniques for building dynamic, accessible websites.">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Logan Oyolo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <meta name="description" content="Logan Oyolo's WDD 131 Dynamic Web Fundamentals course page, featuring personal information, details about Lima, Peru, and helpful web development resources.">
+    <meta name="author" content="Logan Oyolo">
 </head>
-
 <body>
-  <div class="holy-grail">
+
     <header>
-      <span id="course-title">WDD 131: Dynamic Web Fundamentals – Diliana Thompson</span>
-      <nav aria-label="Main Navigation">
-        <a href="https://www.linkedin.com/in/diliana-t-aa31053">LinkedIn</a>
-        <a href="https://byupw.instructure.com/">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/prov/4?lang=eng">Favorite Scripture</a>
-        <a href="index.html">Final Project</a>
-      </nav>
+    <h1><span id="course-title">WDD 131: Dynamic Web Fundamentals</span> - Logan Oyolo</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/logan-oyolo-381514224/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/10?lang=eng">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="holy-grail-body">
-      <main>
-        <h1>Diliana Thompson - WDD 131 - Dynamic Web Fundamentals</h1>
+    <main>
+        <div class="container">
 
-        <div class="holy-grail-columns">
-          <!-- About Me Card -->
-          <section class="card">
-            <h2>About Me</h2>
-            <div class="about-content">
-              <img src="images/me.webp" alt="Portrait of Diliana Thompson" class="profile-img" width="400" height="500">
-              <div class="about-text">
-                <p>Hello! I'm Diliana Thompson, a passionate web developer based in Coventry, England. I love blending creativity with code to build meaningful digital experiences that solve real problems.</p>
-                <p>Coventry inspires me with its rich history and vibrant energy—from its medieval architecture to its modern innovations. I carry that spirit of resilience and creativity into everything I create.</p>
-                <div class="city-images">
-                  <img src="images/coventry-flag.webp" alt="Coventry city flag" class="flag-img" width="300" height="200">
-                  <img src="images/coventry-city.webp" alt="Skyline view of Coventry" class="city-img" width="300" height="200">
-                </div>
-              </div>
+            <div class="combined-section">
+                <section class="about">
+                    <div class="title-box">
+                        <h1>About Me - Logan Oyolo</h1>
+                    </div>
+                    <img src="images/me.jpg" alt="Logan">
+                    <p>My name is Logan. I was born in Lima and live with my family in Peru. I am currently not working at the moment but im seeking opportunities to work, as well I like to spend time with my family and friends on my free time.</p>
+                </section>
+
+                <section class="location">
+                    <h2>Lima, Peru</h2>
+                    <p>Lima, Peru's capital, blends history and modernity. Founded in 1535, it's famous for its Spanish colonial architecture, vibrant culinary scene, and status as South America's culinary capital. Lima also offers coastal views, ancient ruins, and lively festivals.</p>
+                    <img src="images/flag.jpg" alt="Flag">
+                </section>
             </div>
-          </section>
 
-          <!-- Web Resources Card -->
-          <section class="card">
-            <h2>Web Dev Resources</h2>
-            <img src="images/web-resources.webp" alt="Web development resources" class="resources-img" width="400" height="300">
-            <p>Here are some excellent websites to learn web development:</p>
-            <ul>
-              <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a> – Hands-on projects and certifications</li>
-              <li><a href="https://www.theodinproject.com/">The Odin Project</a> – Project-based learning path</li>
-              <li><a href="https://developer.mozilla.org/">MDN Web Docs</a> – Trusted documentation</li>
-              <li><a href="https://www.codecademy.com/">Codecademy</a> – Interactive coding lessons</li>
-              <li><a href="https://www.w3schools.com/">W3Schools</a> – Beginner-friendly tutorials</li>
-            </ul>
-          </section>
+            <section class="resources">
+                <div class="title-box">
+                    <h2>Web Dev Resources</h2>
+                </div>
+                <ul>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                </ul>
+            </section>
         </div>
-      </main>
-    </div>
+    </main>
 
-    <footer>
-      <p>&copy; <span id="currentyear"></span> Diliana Thompson. Coventry, England.</p>
-      <p id="lastModified"></p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy;2024 &#128150; Logan Oyolo &#127757; Peru</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+
+<script src="scripts/getdates.js" defer></script>
 </body>
 </html>

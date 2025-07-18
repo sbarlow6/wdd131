@@ -1,346 +1,120 @@
-/* 🔄 Reset and Box Model */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* 🌍 Body Styling */
 body {
-  font-family: "Montserrat", "Open Sans", sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(135deg, #e6f7ff, #ffffff);
-  color: #002147;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
 }
 
-/* 🖼 Universal Image Styling */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* 🔧 Layout Containers */
-.holy-grail {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.holy-grail-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* 🧭 Header & Navigation */
 header {
-  background: linear-gradient(to right, #1a5276, #2874a6);
-  color: #ffffff;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #004080;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
 }
 
-#course-title {
-  display: block;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+header h1 {
+    font-size: 24px;
+    margin-bottom: 60px;
 }
 
-nav {
-  background-color: #002147;
-  padding: 0.8rem 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  border-radius: 5px;
-  border: 2px solid transparent;
+nav ul li {
+    margin: 15px;
 }
 
-nav a:hover {
-  background-color: #d0e7f5;
-  color: #002147;
-  border-color: #87ceeb;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 150px 100px;
 }
 
-nav a:focus {
-  outline: 2px dashed #D0E7F5;
-  outline-offset: 4px;
-}
-
-/* 📄 Main Content */
 main {
-  flex: 1;
-  padding: 2rem 1rem;
-  background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-h1 {
-  text-align: center;
-  margin: 1.5rem 0 2.5rem;
-  color: #1a5276;
-  font-size: 2.2rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid #2874a6;
-  display: inline-block;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
 }
 
-/* 📦 Card Layout */
-.holy-grail-columns {
-  display: flex;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 1300px;
+.combined-section, .resources {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
 }
 
-.card {
-  background: linear-gradient(145deg, #ffffff, #f5fbff);
-  border: 1px solid #87ceeb;
-  border-radius: 12px;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 5px 15px rgba(0, 33, 71, 0.1);
-  flex: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 320px;
-  max-width: 520px;
-  margin: 1rem;
-  overflow: hidden;
+.combined-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 33, 71, 0.15);
+.title-box {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.card h2 {
-  background: linear-gradient(to right, #1a5276, #2874a6);
-  color: #ffffff;
-  padding: 0.8rem;
-  border-radius: 8px 8px 0 0;
-  text-align: center;
-  margin: -1.5rem -2rem 1.5rem -2rem;
-  font-size: 1.8rem;
+.about img {
+    float: left;
+    max-width: 100px;
+    margin-right: 15px;
+    border-radius: 8px;
 }
 
-.card p {
-  margin-bottom: 1.2rem;
-  font-size: 1.1rem;
-  color: #333;
+.location img {
+    float: right;
+    max-width: 100px;
+    margin-left: 15px;
+    border-radius: 8px;
 }
 
-.card ul {
-  padding-left: 1.8rem;
-  list-style-type: none;
-  color: #002147;
-  text-align: left;
-  margin-top: 1rem;
+.resources ul {
+    list-style: none;
+    padding: 0;
 }
 
-.card li {
-  margin-bottom: 1rem;
-  position: relative;
-  padding-left: 1.5rem;
-  font-size: 1.05rem;
+.resources ul li {
+    margin: 10px 0;
 }
 
-.card li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #2874a6;
-  font-weight: bold;
+.resources ul li a {
+    color: #004080;
+    text-decoration: none;
 }
 
-.card a {
-  color: #1a5276;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-
-.card a:hover {
-  color: #e74c3c;
-  text-decoration: underline;
-}
-
-/* 🧠 Web Resources Card Image Centering */
-.card .resources-img {
-  margin: 0 auto 1.5rem auto;
-  display: block;
-  width: 85%;
-  max-width: 400px;
-  border: 1px solid #ddd;
-}
-
-/* 👤 About Section */
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1.5rem;
-  padding: 1rem 0;
-}
-
-.profile-img {
-  width: 280px;
-  max-width: 100%;
-  border: 4px solid #2874a6;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-text {
-  max-width: 600px;
-  width: 100%;
-  color: #333;
-  font-size: 1.1rem;
-}
-
-/* 🏙 City Images */
-.city-images {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.city-images img {
-  width: 160px;
-  object-fit: cover;
-  border: 2px solid #2874a6;
-  transition: transform 0.3s ease;
-}
-
-.city-images img:hover {
-  transform: scale(1.05);
-}
-
-/* 📞 Footer */
 footer {
-  background: linear-gradient(to right, #1a5276, #2874a6);
-  color: #ffffff;
-  text-align: center;
-  padding: 1.5rem;
-  font-weight: 600;
-  font-size: 1.1rem;
+    background-color: #004080;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 footer p {
-  margin: 0.5rem 0;
+    font-size: 13px;
 }
 
-/* 📱 Responsive Tweaks */
-@media (max-width: 768px) {
-  .holy-grail-columns {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .about-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .profile-img {
-    max-width: 300px;
-  }
-
-  .city-images {
-    justify-content: center;
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  .city-images img {
-    width: 140px;
-  }
-
-  nav {
-    flex-direction: row;
-    align-items: center;
-    padding: 0.5rem;
-  }
-
-  nav a {
-    margin: 0.3rem;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    font-size: 0.95rem;
-  }
-
-  .card {
-    max-width: 100%;
-    min-width: auto;
-    margin: 0.5rem 0;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  nav a {
-    width: 90%;
-  }
-  
-  .city-images {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .city-images img {
-    width: 90%;
-    max-width: 300px;
-  }
-  
-  #course-title {
-    font-size: 1.3rem;
-  }
-}
-
-/* 🕰 Last Modified Date Style */
-#lastModified {
-  font-style: italic;
-  color: #d0e7f5;
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
+nav ul li a:hover {
+    color: #ADD8E6; 
+    text-decoration: underline;
 }
