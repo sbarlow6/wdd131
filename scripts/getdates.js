@@ -1,14 +1,19 @@
+// getdates.js
 
-const lastModifiedDate = new Date(document.lastModified);
+// Dynamically insert the current year
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-const options = { 
-    year: 'numeric', 
-    month: '2-digit', 
-    day: '2-digit', 
-    hour: '2-digit', 
-    minute: '2-digit', 
-    second: '2-digit' 
-};
-const formattedDate = lastModifiedDate.toLocaleDateString('en-US', options).replace(',', '');
+// Dynamically insert the last modified date
+document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+// Safely insert the current year
+const yearSpan = document.getElementById("currentyear");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
 
-document.getElementById('lastModified').textContent = formattedDate;
+// Safely insert the last modified date
+const lastModifiedPara = document.getElementById("lastModified");
+if (lastModifiedPara) {
+  lastModifiedPara.textContent = "Last Modified: " + document.lastModified;
+}
+

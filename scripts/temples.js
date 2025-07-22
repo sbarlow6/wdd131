@@ -1,32 +1,35 @@
-function filterImages(category) {
-    const items = document.querySelectorAll('.grid-item');
-    items.forEach(item => {
-        if (category === 'all') {
-            item.style.display = 'block';
-        } else {
-            if (item.classList.contains(category)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        }
+function updateFooterDates() {
+  const yearSpan = document.getElementById("year");
+  const modifiedSpan = document.getElementById("lastModified");
+
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  if (modifiedSpan) {
+    const modifiedDate = new Date(document.lastModified);
+    const formatted = modifiedDate.toLocaleString(undefined, {
+      dateStyle: 'medium',
+      timeStyle: 'short'
     });
+    modifiedSpan.textContent = formatted;
+  }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const lastModifiedDate = new Date(document.lastModified);
+function setupMobileMenuToggle() {
+  const menuButton = document.getElementById("menu");
+  const nav = document.getElementById("nav");
 
-    const month = String(lastModifiedDate.getMonth() + 1).padStart(2, '0');
-    const day = String(lastModifiedDate.getDate()).padStart(2, '0');
-    const year = lastModifiedDate.getFullYear();
-    const hours = String(lastModifiedDate.getHours()).padStart(2, '0');
-    const minutes = String(lastModifiedDate.getMinutes()).padStart(2, '0');
-    const seconds = String(lastModifiedDate.getSeconds()).padStart(2, '0');
+  if (menuButton && nav) {
+    menuButton.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      menuButton.textContent = isOpen ? "✖" : "☰";
+      menuButton.setAttribute("aria-expanded", isOpen);
+    });
+  }
+}
 
-    const formattedDate = `${month}/${day}/${year} ${hours}:${minutes}:${seconds}`;
-
-    const lastModifiedElement = document.getElementById('lastModified');
-    if (lastModifiedElement) {
-        lastModifiedElement.textContent = formattedDate;
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  updateFooterDates();
+  setupMobileMenuToggle();
 });
