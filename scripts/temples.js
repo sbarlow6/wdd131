@@ -3,14 +3,17 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
 
+let openMenuBtn
+let closeMenuBtn
+let mobileMenu
 
 document.addEventListener("DOMContentLoaded", function () { 
 
-  const openMenuBtn = document.getElementById("open-menu"); 
+  openMenuBtn = document.getElementById("open-menu"); 
 
-  const closeMenuBtn = document.getElementById("close-menu"); 
+  closeMenuBtn = document.getElementById("close-menu"); 
 
-  const mobileMenu = document.getElementById("mobile-menu"); 
+  mobileMenu = document.getElementById("mobile-menu"); 
 
   
 
@@ -25,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   closeMenuBtn.addEventListener("click", () => { 
 
     mobileMenu.classList.remove("active"); 
-
+    console.log("Close Button clicked")
   }); 
 
   

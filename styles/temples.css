@@ -72,7 +72,7 @@ nav a:hover {
 
 .mobile-nav {  
 
-    display: none; 
+    display: block; 
     position: absolute;  
     top: 60px; 
     right: 0;  
@@ -84,6 +84,8 @@ nav a:hover {
 
 .mobile-nav.active {  
     display: block;  
+    transform: translateX(0%);
+    pointer-events: all;
 } 
 
 .close-menu {  
@@ -101,14 +103,14 @@ nav a:hover {
     width: 100%;
     height: 100vh;
     background-color: #2a2a2a;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     z-index: 9;
-    visibility: hidden;
+    visibility: visible;
     pointer-events: none;
 }
 
