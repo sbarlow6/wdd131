@@ -1,162 +1,180 @@
-:root {
-    --primary-color: #003366; 
-    --secondary-color: #0059b3; 
-    --accent-color: rgb(0,0,0);
-    --accent1-color: #f5f3f4;
-    --accent2-color: rgb(14, 66, 79);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-    --heading-font: "Roboto", sans-serif;
-    --body-font: "Open Sans", sans-serif;
+:root {
+    --black: #000000;
+    --secondaryBlack: #14213d;
+    --orange: #fca311;
+    --grey: #e5e5e5;
+    --white: #ffffff;
 }
 
-* {
+
+html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
 body {
-    display: flex;
-    font-family: var(--body-font);
-    font-weight: 400;
-    background-color: var(--accent2-color);
-    
-
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
 }
 
-h1 span{
-    color: #fff176;
-    font-weight: 100;
-    margin-left: 10px;
-}
-
-p {
-  color: var(--accent1-color);
-}
-.container {
-    width: 1150px;
-    height: 1000px;
-    margin: 0 auto;
-    display: grid;
-    padding: 2px;
-    
-}
-
-header {
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    background-color: var(--primary-color);
-    
-}
-
-#course-title{
-    display:block;
-    font-size:1.5rem;
-    font-weight: bold;
-    margin-bottom:1rem;
-}
-
-h1 {
-     text-align: center;
-     align-items: center;
-}
-
-h1, h2, h3, h5 {
-    font-family: var(--heading-font);
-    font-weight: 300;
-    color: var(--accent1-color);
-
+#course-title {
+    display: block;
 }
 
 nav {
-    display:flex;
-    justify-content: center;
-    gap:1.5rem;
+    background-color: var(--secondaryBlack);
+    width: 100%
+}
 
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: auto;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: auto;
 }
 
 nav a {
-    margin: 0 1rem;
-    color: var(--accent1-color);
-    padding: 0.5rem 1rem;
-    font-size: 1.25em;
+    display: block;
+    color: var(--grey);
+    text-align: center;
+    padding: 1rem;
+    font-family: roboto;
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+    color: var(--orange);
+}
 
-.box{
-    justify-items: center;
+header {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+header h1 {
     display: flex;
-    width: 1150px;
-    height: 850px;
-}
- 
-nav a:hover{
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    border: 1px solid #fff;
+    flex: auto;
+    color: var(--white);
+    text-align: center;
+    font-family: roboto;
 }
 
-main{
-    max-width: 750px;
+#course-title {
+    display: block;
+    margin: 0;
     padding: 1rem;
-    display: grid;
-    gap: 1rem;
-    background-color: var(--accent-color);
-
 }
 
-.card{
+main {
+    max-width: 100%;
     display: flex;
-    background-color: var(--accent-color);
-    border-radius: 8px;
-    padding: 1rem;
-    gap: 1rem;
-    
 }
 
-.card img{
-    width: 150px;
-    height: 150px;
+.topsection {
+    display: flex;
+}
+
+.card {
+    border: 2px solid var(--secondaryBlack);
     border-radius: 5px;
-    padding: 2px;
+    margin: 10px;
+    flex: 1;
 }
 
+.card h2 {
+    margin: 0;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    background-color: var(--orange);
+    color: black;
+}
 
-aside {
+.aboutme {
+    flex: 2;
+}
 
-    width: 35%;
-    background-color: var(--accent-color);
+.aboutme .content {
+    display: flex;
+    padding: 3px;
+    margin: 3px;
+}
+
+.aboutme .content p {
+    flex: 1;
+    padding: 5px;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.aboutme .content img {
+    max-width: 50%;
+    flex: none;
+    margin: 5px;
+}
+
+.english {
+    flex: 1;
+}
+
+.english .content img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.english .content {
     align-items: center;
-    }
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
 
-footer{
-    background-color: var(--primary-color);
-    color: var(--accent1-color);
+.english ul {
+    list-style-type: none;
+    display: flex;
+    flex: auto;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.english ul li {
+    flex: auto;
+}
+
+.english a {
+    display: block;
+    color: var(--grey);
     text-align: center;
     padding: 1rem;
-
+    font-family: roboto;
+    text-decoration: none;
 }
 
-footer p {
-    margin: 0.5rem 0;
+.english a:hover {
+    text-decoration: underline;
+    color: var(--orange);
 }
 
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    nav ul li {
-        flex: 1 1 100%
-    }
+footer {
+    background-color: var(--secondaryBlack);
+    color: var(--grey);
+    text-align: center;
+    padding: 1rem;
+    font-family: roboto;
 }
-
- @media screen and (min-width: 640px) {
-    h1 {
-        font-size: 2rem;
-        margin: 1rem;
-        
-    }
- }
