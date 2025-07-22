@@ -1,28 +1,30 @@
-@media (min-width: 700px) {
-  #menu {
-    display: none;
-  }
-
-  .navigation {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  main h1,
-  main h2 {
-    font-size: 2rem;
-  }
-
-  .site-title {
-    font-size: 2.2rem;
-  }
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    
+}
+    
+.gallery-item p {
+    font-size: 1.1rem;;
 }
 
+.gallery {
+    gap:25px;
+    padding: 10px 0;
+    
+}
+
+
+/*
+@media (min-width: 760px) {
+    nav {
+        justify-content: center;
+    }
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+*/

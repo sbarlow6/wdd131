@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore Nairobi, Kenya—where modern life meets natural beauty. Check out current weather and local highlights.">
-  <title>Nairobi, Kenya</title>
-  <link rel="stylesheet" href="week03/styles/place.css" />
-  <link rel="icon" type="image/x-icon" href="week03/images/favicon.ico">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alcazar of Segovia | WDD 131 Dynamic Web Fundamentals by Dery henriquez</title>
+    <meta name="description" content="Explore the Alcázar of Segovia in this WDD 131 project. Learn about its history, attactions, weather, and travel tips.">
+    <meta name="author" content="Dery Henriquez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+  </head>
+
 <body>
-  <header>
-    <h1>Nairobi, Kenya</h1>
-  </header>
+    
+    <header>
+        <h1> Alcázar of Segovia </h1>
+    </header>
+    <main>
+        <picture class="hero">
+                <source media="(min-width: 600px)" srcset="images/alcazar-large.webp">
 
-  <div class="hero">
-    <picture>
-  <source srcset="week03/images/hero-large.webp" media="(min-width: 1000px)" />
-  <source srcset="week03/images/hero-medium.webp" media="(min-width: 500px)" />
-  <img src="week03/images/hero-small.webp" alt="Nairobi Kenya, Temple" width="500" height="250" />
-</picture>
-  </div>
-  <main>
-    <section class="nairobi-info">
-      <h2>Nairobi cityscape</h2>
-      <p>
-        Nairobi, the capital city of Kenya, is known for its unique blend of modern urban life and natural beauty.
-        From bustling markets and skyscrapers to national parks and diverse wildlife, the city offers a vibrant
-        experience for visitors and locals alike.
-      </p>
-    </section>
+                <img src="images/alcazar-small-01.webp" alt="view of the Alcazar of Segovia castle in Spain" width="584" height="342">
+            </picture>
+     
 
-    <section class="weather-info">
-      <h2>Current Weather in Nairobi</h2>
-      <img src="week03/images/weather-icon.jpeg" alt="Weather Icon" width="64" height="64">
-      <p><strong>Temperature:</strong> <span id="temperature">Loading...</span></p>
-      <p><strong>Wind Speed:</strong> <span id="windSpeed">Loading...</span></p>
-      <p><strong>Wind Chill:</strong> <span id="windChill">Loading...</span></p>
-    </section>
-  </main>
+        <section class="about">
+            <h2>About</h2>
+            <ul class="about-list">
+                <li>Location: <span id="location">Segovia, Spain</span></li>
+                <li>Best Time to Visit: <span id="best-time">March to May</span></li>
+                <li>Popular Attractions: <span id="attractions">Alcázar, Cathedral of Seville, Plaza de España</span></li>
+                <li>Local Cuisine: <span id="cuisine">Tapas, Paella, Jamón Ibérico</span></li>
+            </ul>
+        </section>
 
-  <footer>
-  <p>&copy; <span id="year"></span> | Nairobi, Kenya | Last Modified: <span id="lastModified"></span></p>
-</footer>
 
- <script src="week03/scripts/place.js" defer></script>
+        <section class="weather">
+            <h2> Weather <span class="icon"></span></h2>
+            <img class="icon-mobile" src="images/weather.svg" alt="Weather Icon">
+            <ul class="weather-box">
+                <li>Temperature: <span id="temp">45</span> °F</li>
+                <li>Wind Speed: <span id="wind">10</span> mph</li>
+                <li>Wind Chill: <span id="windchill"></span></li>
+            </ul>
+        </section>
+
+    </main>
+<footer> 
+     <p> &copy; <span id="currentyear"></span> Dery Henriquez. New Jersey. </p> 
+   <p id="LastModified"></p>
+   <script src="scripts/getdates.js"></script> 
+
+</footer> 
+
 </body>
 </html>

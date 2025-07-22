@@ -1,35 +1,67 @@
-function updateFooterDates() {
-  const yearSpan = document.getElementById("year");
-  const modifiedSpan = document.getElementById("lastModified");
 
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-  }
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-  if (modifiedSpan) {
-    const modifiedDate = new Date(document.lastModified);
-    const formatted = modifiedDate.toLocaleString(undefined, {
-      dateStyle: 'medium',
-      timeStyle: 'short'
-    });
-    modifiedSpan.textContent = formatted;
-  }
-}
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
 
-function setupMobileMenuToggle() {
-  const menuButton = document.getElementById("menu");
-  const nav = document.getElementById("nav");
 
-  if (menuButton && nav) {
-    menuButton.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("open");
-      menuButton.textContent = isOpen ? "✖" : "☰";
-      menuButton.setAttribute("aria-expanded", isOpen);
-    });
-  }
-}
+document.addEventListener("DOMContentLoaded", function () { 
 
-document.addEventListener("DOMContentLoaded", () => {
-  updateFooterDates();
-  setupMobileMenuToggle();
+  const openMenuBtn = document.getElementById("open-menu"); 
+
+  const closeMenuBtn = document.getElementById("close-menu"); 
+
+  const mobileMenu = document.getElementById("mobile-menu"); 
+
+  
+
+  openMenuBtn.addEventListener("click", () => { 
+
+    mobileMenu.classList.add("active"); 
+
+  }); 
+
+  
+
+  closeMenuBtn.addEventListener("click", () => { 
+
+    mobileMenu.classList.remove("active"); 
+
+  }); 
+
+  
+
+  // Opcional: cerrar el menú al hacer clic en un enlace 
+
+  const navLinks = mobileMenu.querySelectorAll("a"); 
+
+  navLinks.forEach(link => 
+
+    link.addEventListener("click", () => { 
+
+      mobileMenu.classList.remove("active"); 
+
+    }) 
+
+  ); 
+
+}); 
+
+
+/*
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+
+
+
+const menuButton = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuButton.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+
+    const isOpen = navMenu.classList.contains("show");
+    menuButton.textContent = isOpen ? "❌" : "☰";
 });
+
+*/

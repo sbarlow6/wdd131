@@ -1,31 +1,66 @@
-/* Ensure all elements start with a clean slate */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Optional: Give the body a nice font and padding */
+:root {
+    --main-font: "Roboto", sans-serif;
+
+}
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  padding: 1rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f9;
+    color:#333;
+    line-height: 1.6;
 }
 
-/* Hero section styling */
-.hero {
-  max-width: 1500px;
-  margin: 0 auto;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #35424a;
+    color: orange;
 }
 
-/* Responsive image */
+
 .hero img {
-  width: 100%;
-  height: auto;
-  display: block;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: Add some spacing for better visual layout */
 main {
-  padding: 1rem 0;
+    display: block;
+    position: inherit;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+   
+ 
+}
+
+footer{
+    background-color: #35424a;
+    color: orange;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+
+
+@media (min-width: 500px) {
+    .hero img {
+        border-radius: 0;
+    
+}
 }

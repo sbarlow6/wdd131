@@ -1,115 +1,162 @@
-/* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --primary-color: #003366; 
+    --secondary-color: #0059b3; 
+    --accent-color: rgb(0,0,0);
+    --accent1-color: #f5f3f4;
+    --accent2-color: rgb(14, 66, 79);
 
-/* Reset */
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-/* Base Styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f2f2f2;
-  color: #222;
-  line-height: 1.6;
+    display: flex;
+    font-family: var(--body-font);
+    font-weight: 400;
+    background-color: var(--accent2-color);
+    
+
 }
 
-/* Header */
+h1 span{
+    color: #fff176;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+p {
+  color: var(--accent1-color);
+}
+.container {
+    width: 1150px;
+    height: 1000px;
+    margin: 0 auto;
+    display: grid;
+    padding: 2px;
+    
+}
+
 header {
-  background-color: #2c3e50;
-  color: #ffffff;
-  padding: 2rem 1rem;
-  text-align: center;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    
 }
 
-#course-title {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+#course-title{
+    display:block;
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-bottom:1rem;
 }
 
-/* Navigation using Flex */
+h1 {
+     text-align: center;
+     align-items: center;
+}
+
+h1, h2, h3, h5 {
+    font-family: var(--heading-font);
+    font-weight: 300;
+    color: var(--accent1-color);
+
+}
+
 nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+    gap:1.5rem;
+
 }
 
 nav a {
-  text-decoration: none;
-  color: white;
-  background-color: #34495e;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 1rem;
+    color: var(--accent1-color);
+    padding: 0.5rem 1rem;
+    font-size: 1.25em;
+    text-decoration: none;
 }
 
-nav a:hover,
-nav a:focus {
-  background-color: #1abc9c;
-  color: #000;
-  transform: scale(1.05);
-  outline: none;
+
+.box{
+    justify-items: center;
+    display: flex;
+    width: 1150px;
+    height: 850px;
+}
+ 
+nav a:hover{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: 1px solid #fff;
 }
 
-/* Main */
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  display: grid;
-  gap: 2rem;
+main{
+    max-width: 750px;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    background-color: var(--accent-color);
+
 }
 
-/* Cards using CSS Grid */
-.card {
-  background-color: #ffffff;
-  border-radius: 6px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  align-items: center;
+.card{
+    display: flex;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+    
 }
 
-.card h2 {
-  grid-column: 1 / -1;
-  font-size: 1.25rem;
-  color: #2c3e50;
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 2px;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
 
-/* Footer */
-footer {
-  background-color: #2c3e50;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-}
+aside {
 
-/* Responsive */
-@media (max-width: 700px) {
-  .card {
-    grid-template-columns: 1fr;
+    width: 35%;
+    background-color: var(--accent-color);
+    align-items: center;
+    }
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
     text-align: center;
-  }
+    padding: 1rem;
 
-  nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        flex: 1 1 100%
+    }
+}
+
+ @media screen and (min-width: 640px) {
+    h1 {
+        font-size: 2rem;
+        margin: 1rem;
+        
+    }
+ }

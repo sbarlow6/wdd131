@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Mary Okello</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Mary Okello. Course introduction, student profile, and project showcase.">
-  <meta name="author" content="Mary Okello">
-  <link rel="stylesheet" href="styles/base.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Preload and optimize Google Font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></noscript>
+    <title>WDD 131 - Dynamic Web Fundamentals - Dery henriquez</title>
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/base.css" type="text/css">
+    <meta name= "description" content="Welcome to my WDD 131 - Dynamic Web Fundamentals portfolio. Here, I showcase my projects, assignments, and learning activities as I develop skills in HTML, CSS, and JavaScript.">
+    <meta name="author" content="Dery Henriquez">
 
-  <!-- JavaScript -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
 
-  <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>  
 </head>
+
 <body>
-  <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+ <div class="container">    
+ 
+<header> 
+     
+<h1 id="course-title"> WDD 131 - Dynamic Web Fundamentals <span>- Dery Henriquez </span>
+    </h1> 
+
+
+    <div class="header-contents">
+    
     <nav>
-
-      <a href="https://www.linkedin.com/in/mary-okello-data-analyst/">LinkedIn</a>
-      <a href="https://byupw.instructure.com/">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
-      <a href="https://www.linkedin.com/in/mary-okello-data-analyst/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a>
-      <a href="#">Final Project</a>
+        <a href="https://www.linkedin.com">LinkedIn</a>
+        <a href="https://byupw.instructure.com/.">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng">Scripture</a>
+        <a href="final-proyect.html">Final Proyect</a>
+        <a href="https://github.com">GitHub</a>
+        <a href="about.html">About Page</a>
+        <a href="contact.html">Contact</a>
     </nav>
-  </header>
+</div>
+</header>
 
-  <main>
-    <h1>Mary Okello</h1>
+<div class="box">
 
-    <section class="card">
-      <h2>About Me</h2>
-  
-      <img src="images/mary-profile.jpg" alt="Photo of Mary Okello" width="300" height="300">
-      <p>Hello! I'm Mary, a data analyst passionate about humanitarian work and technology. I'm currently taking WDD 131 to improve my web development skills.</p>
-    </section>
+<main> 
+   
+ <section class="card">
 
-    <section class="card">
-      <h2>My Interests</h2>
+    <h2>About Me</h2>
 
-      <img src="images/data-visualization.jpeg" alt="A colorful data visualization dashboard" width="300" height="300">
-      <p>I love working with data to tell stories that make a difference. Outside work, I enjoy reading scriptures, exploring nature, and teaching others.</p>
-    </section>
-  </main>
+        <p>Hello, my name is Dery Henriquez I am from Tegucigalpa, Honduras. I currently work as a diesel truck mechanic 
+        in my own company, I really enjoy sharing my knowledge with others but especially with my children since knowledge 
+        is the treasure that no one can take away from others. Thanks to this work I have been able to meet many people from 
+        different parts of the world which is gratifying. I'm currently studying web and computer programming since I've always 
+        had an interest in learning about programming and I really like it. </p>
+    <img src="images/profile.jpg" alt="My Photo" width="150">
 
-  <footer
-    <p>
-      &copy; <span id="currentyear"></span> Mary Okello, Kenya
-    </p>
-    <p id="lastModified"></p>
-  </footer>
+</section>
 
-  <script>
-    // Populate the current year
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
+<section class="card">
+    <h2>Hobbies</h2>
+    <img src="images/bjj.jpg" alt="My Hobby" width="150">
+    <p>I currently practice Brazilian jiu jitsu with my children which I love and love because 
+        I can spend time with my children and at the same time they learn discipline.  
+        I like to build furniture for my home with my children to teach them that skill, 
+        I am currently studying Web Development to be able to work in family businesses 
+        and drive them to a better future</p>
+</section>
+</main>
 
-    // Populate the last modified date
-    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
-  </script>
+
+<aside>
+<h3>Tegucigalpa, Honduras</h3>
+<img src="images/flag.jpeg" alt="Honduran Flag" width="300">
+<p>The Honduran flag is a horizontal triband of turquoise (or blue) and white, with five turquoise stars 
+    in the center of the white stripe. The stars represent the five original Central American nations, and the 
+    stripes symbolize the Pacific and Caribbean Seas, with the white band representing the land between them. Tegucigalpa,
+     the capital of Honduras, was founded in 1578 on the site of an existing indigenous settlement</p>
+</aside>
+</div>
+
+<footer> 
+     <p> &copy; <span id="currentyear"></span> Dery Henriquez. New Jersey. </p> 
+   <p id="LastModified"></p>
+
+</footer>
+<script src="scripts/getdates.js"></script> 
+
+
+ </div>
+
 </body>
+
+
 </html>
-
-
-    <p>&copy; <span id="currentyear"></span> Mary Okello, Kenya</p>
-    <p id="lastModified"></p>
-  </footer>
-</body>
-</html>
-
