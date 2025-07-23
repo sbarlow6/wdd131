@@ -1,2 +1,2 @@
 # wdd131
-Wdd131 project assignment 
+WDD 131  BYU IDAHO
