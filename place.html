@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131: Dynamic Web Fundamentals - Ashiboye Spencer</title>
-        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Ashiboye Spencer">
-        <meta name="author" content="Ashiboye Spencer">
-        <link rel="stylesheet" href="styles/place.css">
-        <link rel="stylesheet" href="styles/place-large.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
-        <script src="scripts/place.js" defer></script>
-    </head>
-    <body>
-    <header>
-        <h1>Welcome to Ghana</h1>
-    </header>
-    <main>
-        <section class="hero">
-            <picture>
-                <source media="(min-width: 768px)" srcset="images/market.small.webp">
-                <img src="images/pexels-khanhhoangminh-8613913-min.webp" alt="Vibrant market scene in Ghana" width="1200" height="800">
-            </picture>
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> D.R Congo Country Page</title>
+    <meta name="description" content="Explore the beauty and culture Congo Kinshasa">
+    <meta name="author" content="by Nickson Mbuyi Mukendi">
 
-        <section class="info-grid">
-            <div class="info-card">
-                <h3>Attractions</h3>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+
+    <link rel="stylesheet" href="place_style/place.css">
+    <script src="place_script/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>D.R Congo / kinshasa</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="image-hero/drc flag.webp">
+            <source media="(max-width: 1200px)" srcset="image-hero/drc flag.webp">
+            <div class="hero-image">
+                <img src="image-hero/okapi.webp" alt="Scenic view of Congo animal Okapi" width="200">
+                <figcaption>unique animal found in the DRC <br> <em>Okapi</em></figcaption>
+            </div>
+        </picture>
+    </header>
+    
+    <main>
+        <div class="content-container">
+            <section class="info-section">
+                <h2>Data</h2>
+                <img src="./image-hero/115746_data_icon.svg" alt="Weather icon" class="mobile-icon" width="50" height="50">
                 <ul>
-                    <li>Kakum National Park</li>
-                    <li>Cape Coast Castle</li>
-                    <li>Mole National Park</li>
-                    <li>Kwame Nkrumah Mausoleum</li>
+                    <li><strong>Area:</strong> 2.345 km</li>
+                    <li><strong>Actual President:</strong> Mr. President : Felix Tshisekedi</li>
+                    <li><strong>Currency:</strong> Congolese Franc</li>
+                    <li><strong>Population</strong> 109 million</li>
+                    <li><strong>Capital:</strong> Kinshasa</li>
+                    <li><strong>Languages:</strong> French,English,Lingala,Tshiluba,Swahili,Kikongo</li>
+                    <li><strong>Time-zone:</strong> GMT+1</li>
+                    <li><strong>Calling code:</strong>+243</li>
                 </ul>
-            </div>
-            <div class="info-card weather-card">
-                <h3>Weather <span class="weather-icon-large"></span></h3>
-                <div class="weather-details">
-                    <p>Temperature: <span id="temperature">28</span>°C</p>
-                    <p>Wind Speed: <span id="wind-speed">15</span> km/h</p>
-                    <p>Wind Chill: <span id="wind-chill">N/A</span></p>
-                    <div class="weather-icon-mobile">
-                        <img src="images/cloud-sun-fill.svg" alt="Cloudy weather icon">
-                    </div>
+            </section>
+        
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <div class="weather-content">
+                    <img src="image-hero/110804_sun_cloud_icon.svg" alt="Weather icon" class="mobile-icon" width="50" height="50">
+                    <p>Current temperature: <span id="temp">22</span>°C</p>
+                    <p>Wind speed: <span id="wind-speed">12</span> km/h</p>
+                    <p>Wind chill: <span id="wind-chill">N/A</span></p>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
+    
     <footer>
-        <p>&copy; <span id="currentyear"></span> Explore Ghana</p>
-        <p>Last Modified: <span id="lastmodified"></span></p>
+        <p>&copy; <span id="current-year"></span> Nickson Mbuyi Mukendi</p>
+        <p>Last modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>

@@ -1,125 +1,170 @@
-main {
-    max-width: 960px;
-    margin: 1rem auto;
-    padding: 1rem;
+:root {
+    --primary-color: #50482c;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --nav-bg-color: #15112c;
+    --nav-text-color: #ecf0f1;
 }
 
-main h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: blue;
-    font-size: 2rem;
-}
-
-.temple-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-}
-
-.temple-grid figure {
+* {
     margin: 0;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.temple-grid img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    object-fit: cover;
-}
-
-.temple-grid figcaption {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: blue;
-    padding-bottom: 5px;
+    min-height: 100vh; /* Changed from min-width to min-height */
+    max-width: 2560px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 header {
-    background-color: #0b0563;
-    color: #eee;
-    display: grid;
-    grid-gap: 1rem;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 30px #333;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    padding: 1rem;
+    text-align: center;
 }
 
-header,
-main {
+header span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 60px;
+    text-align: center;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: var(--nav-text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 2rem;
+nav {
+    display: none;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Updated grid styling */
+.temple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.temple {
+    display: contents; /* This makes the divs participate in the grid */
+}
+
+.temple-grid figure {
     display: flex;
     flex-direction: column;
-}
-
-nav ul.open {
-    display: flex;
-}
-
-nav a {
-    display: block;
-    color: #fff;
+    align-items: center;
     text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    font-size: larger;
+    height: 100%;
 }
 
-nav a:hover {
-    background-color: #eee;
-    color: #000;
+figure:hover {
+    transform: translateY(-5px);
 }
 
-.active {
-    color: yellow;
+.temple-grid img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#menu {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    display: block;
-    padding: 5px 10px;
-    z-index: 100;
+.temple-grid figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
 }
 
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "X";
+header, footer {
+    text-align: center;
 }
 
 footer {
-    background-color: #0b0563;
-    color: #eee;
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 30px #333;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Show navigation when active */
+nav.active {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-rows: repeat(5, auto); /* Adjust rows accordingly */
+    }
+}
+
+@media (max-width: 600px) {
+    .temple-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        grid-template-rows: repeat(9, auto); /* All items in one column */
+    }
+    
+    header span {
+        font-size: 40px;
+    }
 }

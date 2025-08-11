@@ -1,77 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131: Dynamic Web Fundamentals - Ashiboye Spencer</title>
-        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Ashiboye Spencer">
-        <meta name="author" content="Ashiboye Spencer">
-        <link rel="stylesheet" href="styles/temples.css">
-        <link rel="stylesheet" href="styles/temples-large.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
-        <script src="scripts/temples.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <h1>Temples Album</h1>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Old</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Large</a></li>
-                    <li><a href="#">Small</a></li>
-                </ul>
-            </nav>  
-        </header>
-        <main>
-            <h2>Home</h2> 
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtered-Temple Activity</title>
+    <meta name="description" content=" bom page activity week02, WDD 131- Dynamic Web Fundamentals course">
+    <meta name="author" content="Nickson Mbuyi Mukendi">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span>Temples</span>
+        <button id="hamburger" aria-label="Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
             
-            <div class="temple-grid">
-                
+        </nav>
+    </header>
+    <main>
+        <div class="temple-grid">
+            <div class="temple">
                 <figure>
-                    <img src="images/accra-ghana-temple-2-min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple-2-min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple-2-min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple--min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple--min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple--min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple-5-min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple-5-min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/accra-ghana-temple-5-min.jpg" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
-                    <figcaption>Accra, Ghana Temple</figcaption>
+                    <img src="images/temple_image/aba_nigeria_temple_lds.webp" alt="this is the temple of Nigeria">
+                    <figcaption> Nigeria<br><em>temple of Aba </em></figcaption>
                 </figure>
             </div>
-        </main>
-        <footer>
-            <p>&copy; <span id="currentyear"></span> 💚Ashiboye Spencer, Ghana💚</p>
-            <p id="lastmodified"></p>
-        </footer>
-    </body>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/kinshasa_temple.webp" alt="this is the temple of Kinshasa">
+                    <figcaption>DR Congo <br><em>temple of Kinshasa</em></figcaption>
+                </figure>
+            </div>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/kona_temple_lds.webp" alt=" this is the temple of Kona">
+                    <figcaption>Kona <br><em>temple of of kona</em></figcaption>
+                </figure>
+            </div>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/saratoga_springs_utah_temple_exteriors.webp" alt="the temple of Saratoga Utah USA">
+                    <figcaption> USA<br><em>temple of Saratoga</em></figcaption>
+                </figure>
+            </div>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/kyiv_ukraine_temple_lds.webp" alt="the temple of ukraine">
+                    <figcaption> Ukraine<br><em>temple of Kyiv</em></figcaption>
+                </figure>
+            </div>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/lindon_utah_temple_exterior_rendering.webp" alt="the temple of Lindon Utah in USA">
+                    <figcaption> USA<br><em>temple of Lindon_Utah</em></figcaption>
+                </figure>
+            </div>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/seattle_washington_temple_exterior.webp" alt="the temple of Seattle Washington DC USA">
+                    <figcaption> USA<br><em>Temple of Seattle_washington DC</em></figcaption>
+                </figure>
+            </div>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/seoul_korea_temple_lds.webp" alt="the temple of Korea">
+                    <figcaption>Korea <br><em>temple of Seoul</em></figcaption>
+                </figure>
+            </div>
+            <div class="temple">
+                <figure>
+                    <img src="images/temple_image/vernal_temple_lds.webp" alt="temple of vernal USA">
+                    <figcaption>USA <br><em>temple of veral</em></figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Nickson Mbuyi MUKENDI</p>
+        <p>Last updated: <span id="lastupdated"></span></p>
+    </footer>
+
+</body>
 </html>

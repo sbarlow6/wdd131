@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form - Share your feedback on our products.">
+    <meta name="keywords" content="product review, feedback, customer review, rating">
+    <meta name="author" content="Nickson Mbuyi">
+    <title>Product Review Form</title>
+    <title>Thank You for Your Review</title>
+
+    <link rel="stylesheet" href="styles/form_style.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <div class="confirmation">
+            <p>We appreciate you taking the time to share your feedback with us.</p>
+            <p>Your review helps us improve our products and services.</p>
+            <p id="reviewCount"></p>
+            <a href="form.html" class="button">Submit Another Review</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | By Nickson Mbuyi</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Current year and last modified date
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+
+        // Review counter
+        if (typeof(Storage) !== "undefined") {
+            let count = localStorage.getItem('reviewCount') || 0;
+            count = parseInt(count) + 1;
+            localStorage.setItem('reviewCount', count);
+            
+            const countElement = document.getElementById('reviewCount');
+            countElement.textContent = `You've submitted ${count} review${count !== 1 ? 's' : ''} from this device.`;
+        }
+    </script>
+</body>
+</html>

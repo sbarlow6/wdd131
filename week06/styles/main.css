@@ -1,0 +1,146 @@
+/* styles/main.css */
+:root {
+    --primary-color: #101d3a48; /* Deep blue for professionalism */
+    --secondary-color: #e74c3c; /* Red for calls to action */
+    --accent-color: #f39c12; /* Orange for highlights */
+    --light-color: #ecf0f1; /* Light gray for backgrounds */
+    --dark-color: hsl(210, 17%, 72%);
+    --success-color: #27ae60; /* Green for success messages */
+    --color:black: #000; /* Black for text */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header image {   
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--color);
+    text-align: center;
+    margin-top: 0;
+}
+
+body {
+    display: block;
+    background-image: url('../images/fond-abstrait-sombre-vagues-abstraites-rougeoyantes_7247-326.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Serif', serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    border-radius: 5px;
+}
+
+li a {
+
+    color: #ecf0f1;
+    font-size: x-large;
+}
+
+
+.contact-info {
+    display: inline-block;
+    padding: 2rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: justify;
+    background-color: rgba(214, 219, 226, 0.39);
+    box-sizing:content-box;
+    border: 1px solid var(--primary-color);
+    width: 270px;
+    height: 130px;
+    font-size: 17px;
+    color: rgb(230, 220, 220);
+
+}
+
+.copyright {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+.hero {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    box-sizing: 10%;
+    float: right;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #ecf1ef7a;
+    border-radius: 5px;
+    
+}
+.cta-button {
+    padding: 0.5rem;
+    margin: 1.2rem;
+    border-radius: 10px;
+}
+.services-highlight{
+    display: block;
+    background-color: #274bae77;
+    color: white;
+    font-size: x-large;
+
+} 
+.team-dashboard {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    background-color: #3bacf788;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    margin: 1rem;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Ensure all interactive elements are accessible */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:focus, a:focus {
+    outline: 2px solid var(--accent-color);
+}

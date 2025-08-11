@@ -1,35 +1,26 @@
-@media (min-width: 768px) {
-    .temple-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    .temple-grid figure {
-        padding: 20px;
-    }
-
-    .temple-grid img {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-    }
-}
-
-#menu {
+#hamburger {
     display: none;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav {
+    display: block;
 }
 
 nav ul {
-    justify-content: flex-end;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-nav a {
-    flex: 1 1 100%;
+
+@media (max-width: 768px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .temple-grid {
+        grid-template-columns: 1fr;
+    }
 }
