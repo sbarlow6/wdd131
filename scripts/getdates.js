@@ -1,6 +1,4 @@
-// Get current year for copyright
-const currentYear = new Date().getFullYear();
+// Dynamically set the current year
 document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-// Get last modified date
-document.getElementById('lastupdated').textContent = document.lastModified;
+// Dynamically set last modified date and time
+document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;

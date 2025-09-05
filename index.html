@@ -1,63 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd131-Dynamic Web Fundamentals| Nickson Mbuyi Mukendi</title>
-    <meta name="description" content="wdd131-Dynamic Web Fundamentals| Nickson Mbuyi Mukendi.Learn web development fundamentals including HTML, CSS, and JavaScript.">
-    <meta name="author" content="Nickson Mbuyi MUKENDI">
-<!-- this is for this html code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Yakan Frank</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course site by Yakan Frank. Explore weekly assignments, learn HTML, CSS, and JavaScript, and access curated web development resources to build dynamic, responsive websites.">
 
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <meta name="author" content="Yakan Frank">
+  <!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Font stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <span id="course-title"> WDD 131 - dynamic web Fundamentals</span>
-        <nav>
-            <a href="https://www.linkedin.com/in/nickson-mbuyi-392486117 "target="blank">Linkedin</a>
-            <a href="https://byupw.instructure.com/." target="_blank">Canvas</a>
-            <a href=" https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a>
-            <a href="/final_projects/">Final Projects</a>
-            <a href="/form.html">form</a>
-        </nav>
+  <header>
+   <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+  <span class="highlight">– Yakan Frank</span>
+  
 
-    </header>
-    <main>
-        <h1> Nickson Mbuyi Mukendi</h1>
-        <div class="card-container">
-            <section class="card">
-                <h2>About Me</h2>
-                <img src="images/imgprofil.webp" alt="my photo"width="200" height="350">
-                <p> My name is Nickson Mbuyi Mukendi, I was born in the DR Congo/Kinshasa, First son of five children, I live at Kinshasa with my family, place of born : kasai state calls (province in french language), father of three loved children, I'm maried to Magloire Lita, and we are separate in our country as clans, my clan is calls: BALUBA so I'm a MULUBA because singular of BALUBA is MULUBA, and my wife her clan is BANGALA, she is  MUNGALA, I work in a private business like Business man, my entity work in general contruction, we engage many construction professionnal workers, I study code and programming, create website and others,  </p>
-            </section>
+  <nav>
+    <ul>
+      
+      <li><a href="https://www.linkedin.com/in/frank-job-a04389309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+      <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+      <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p17#p17" target="_blank">Scripture</a></li>
+      <li><a href="final-project/" target="_blank">Final Project</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <section>
+    <h1 id="student-name">Yakan Frank</h1>
+    </section>
+    <section class="main-section card">
+      <div class="section-header">About Me</div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>My name is Yakan Frank. I am excited to participate in WDD 131. I enjoy learning new web technologies and building dynamic web pages. I look forward to expanding my skills in HTML, CSS, and JavaScript through this course.</p>
+          <hr>
+          <h2 class="intro-title">Course Overview</h2>
+          <p>This site showcases assignments, resources, and projects for WDD 131 – Dynamic Web Fundamentals, created by Yakan Frank.</p>
+          <h2 class="location-title">My Country: Uganda</h2>
 
-            <section class="card">
-                <h2>DR.Congo-Flag</h2>
-                <img src="images/drc flag.webp" alt="this is the DR Congo flag , my country " width="200" height="200">
-                <p>the Congo/Kinshasa is located in africa and have 9 others country as a neighbors : Congo-brazzaville,
-        Republic central africa, South-sudan, Burundi, Uganda, Angola, Zambia, Rwanda, and Burundi</p>
-            <!-- </section> I change because it create a news box in my page -->
-            <!-- <section class="card"> set this as  comment to obtain two section only -->
-                <h2> Web Dev Ressources</h2>
-                <ul>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
-                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                    <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
-                    <li><a href="https://www.udemy.com/courses/search/?q=web%20development" target="_blank">Udemy Web Development Courses</a></li>
-                </ul>
-            </section>
+          <div class="location-content">
+            <img src="images/uuuu.webp" alt="Official Flag of Uganda" class="flag-img">
+            <div>
+              <p>Uganda is a country in East Africa, known for its diverse wildlife and beautiful landscapes. It is home to many unique species and is famous for its national parks, lakes, and friendly people.</p>
+              <p class="flag-caption"><em>Official Flag of Uganda</em></p>
+            </div>
+          </div>
         </div>
-    </main>
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Nickson Mbuyi MUKENDI</p>
-        <p>Last updated: <span id="lastupdated"></span></p>
+        <div class="about-img">
+        <img src="images/photo1.jpg" alt="Yakan Frank">
 
-    </footer>
-    
+        </div>
+      </div>
+    </section>
+    <aside class="card">
+      <div class="section-header">Web Dev Resources</div>
+      <ul> 
+        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>&copy;<span id="currentyear"></span> Yakan Frank <span class="footer-sep">|</span> Uganda</span>
+      <span id="lastmodified"></span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastmodified').textContent = 'Last Modification: ' + document.lastModified;
+  </script>
+  
 </body>
 </html>
