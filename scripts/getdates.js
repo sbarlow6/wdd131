@@ -1,6 +1,4 @@
-const yearSpan = document.getElementById("currentyear");
-const currentYear= new Date().getFullYear();
-yearSpan.textContent = currentYear;
-
-const lastMod = document.getElementById("lastModified");
-lastMod.textContent = document.lastModified;
+// Dynamically set the current year
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+// Dynamically set last modified date and time
+document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
