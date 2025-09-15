@@ -3,62 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> D.R Congo Country Page</title>
-    <meta name="description" content="Explore the beauty and culture Congo Kinshasa">
-    <meta name="author" content="by Nickson Mbuyi Mukendi">
-
+    <meta name="description" content="Discover key facts about Uganda, including its geography, culture, economy, and national symbols. A student project for WDD 131.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Yakan Frank">
+    <title>Uganda profile</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 
-    <link rel="stylesheet" href="place_style/place.css">
-    <script src="place_script/place.js" defer></script>
 </head>
 <body>
+
     <header>
-        <h1>D.R Congo / kinshasa</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="image-hero/drc flag.webp">
-            <source media="(max-width: 1200px)" srcset="image-hero/drc flag.webp">
-            <div class="hero-image">
-                <img src="image-hero/okapi.webp" alt="Scenic view of Congo animal Okapi" width="200">
-                <figcaption>unique animal found in the DRC <br> <em>Okapi</em></figcaption>
-            </div>
-        </picture>
+        <h1>UGANDA 🌍</h1>
+    <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" fill="green" />
+</svg>
+
     </header>
     
+
     <main>
-        <div class="content-container">
-            <section class="info-section">
-                <h2>Data</h2>
-                <img src="./image-hero/115746_data_icon.svg" alt="Weather icon" class="mobile-icon" width="50" height="50">
-                <ul>
-                    <li><strong>Area:</strong> 2.345 km</li>
-                    <li><strong>Actual President:</strong> Mr. President : Felix Tshisekedi</li>
-                    <li><strong>Currency:</strong> Congolese Franc</li>
-                    <li><strong>Population</strong> 109 million</li>
-                    <li><strong>Capital:</strong> Kinshasa</li>
-                    <li><strong>Languages:</strong> French,English,Lingala,Tshiluba,Swahili,Kikongo</li>
-                    <li><strong>Time-zone:</strong> GMT+1</li>
-                    <li><strong>Calling code:</strong>+243</li>
-                </ul>
-            </section>
+        <section class="hero">
+            <img 
+                src="images/downloadoo.webp" 
+                srcset="images/downloadoo-small.webp 480w, images/downloadoo.webp 800w" 
+                sizes="(max-width: 600px) 480px, 800px" 
+                alt="Uganda landscape">
+
         
-            <section class="weather-section">
-                <h2>Weather</h2>
-                <div class="weather-content">
-                    <img src="image-hero/110804_sun_cloud_icon.svg" alt="Weather icon" class="mobile-icon" width="50" height="50">
-                    <p>Current temperature: <span id="temp">22</span>°C</p>
-                    <p>Wind speed: <span id="wind-speed">12</span> km/h</p>
-                    <p>Wind chill: <span id="wind-chill">N/A</span></p>
-                </div>
-            </section>
-        </div>
+
+            <div class="data-box">
+                <div class="title-bar">data</div>
+
+                <ul>
+                    <li><strong>Area:</strong>  587,041 sq km</li>
+                    <li><strong>Population:</strong>  27691018</li>
+                    <li><strong>Capital</strong>  Kampala</li>
+                    <li><strong>Languages</strong>  luganda, swahali</li>
+                     <li><strong>Time zone</strong> EAT</li>
+                    <li><strong>calling code</strong>  +256</li>
+                    <li><strong>Internet TLD</strong>  .mg</li>
+                </ul>
+            </div>
+
+
+            <div class="weather-box">
+                <div class="title-bar">Weather</div>
+                <ul>
+                    <li><strong>TEmperature:</strong> <span id="temp"> 10°C</span></li>
+                    <li><strong>Condition:</strong> Partly Sunny</li>
+                    <li><strong>Wind:</strong>  5 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill"> 9.8°C</span></li>
+                </ul>
+                <button id="toggleUnits">Switch to °F</button>
+            </div>
+        </section>
     </main>
-    
     <footer>
-        <p>&copy; <span id="current-year"></span> Nickson Mbuyi Mukendi</p>
-        <p>Last modified: <span id="last-modified"></span></p>
+        <div class="footer-content">
+            <span>&copy;<span id="currentyear"></span> Powered By Frank Tech <span class="footer-sep"></span> Uganda </span>
+            <span id="lastmodified"></span>
+        </div>
     </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastmodified').textContent = 'last Modification: ' + document.lastModified;
+    </script>
 </body>
 </html>
+
+
+
+

@@ -28,7 +28,7 @@
   </header>
 
     <main>
-        Welcome to the Temple Album - Home
+        <h1>Welcome to the Temple Album - Home</h1>
         <h2>Featured Temples</h2>
   
     <section class="grid">
@@ -37,7 +37,7 @@
         <figcaption>Stillness. Spirit.Strength. TempleMoments</figcaption>
       </figure>
       <figure>
-        <img src="images//Barran.webp" alt="San Diego California Temple">
+        <img src="images/Barran.webp" alt="San Diego California Temple">
         <figcaption>A house of peace in a world of noise. LDSTemple</figcaption>
       </figure>
       <figure>
@@ -71,9 +71,16 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Powered by Frank Tech</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
-  </footer>
-</body>
+   <footer>
+        <div class="footer-content">
+            <span>&copy;<span id="currentyear"></span> Powered By Frank Tech <span class="footer-sep"></span> Uganda </span>
+            <span id="lastmodified"></span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastmodified').textContent = 'last Modification: ' + document.lastModified;
+    </script>
+
+
 </html>
