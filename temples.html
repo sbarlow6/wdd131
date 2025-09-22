@@ -3,92 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
-    <meta name="description" content="Temple Album">
-    <meta name="keywords" content="Temple Album, Panama Temple">
-    <meta name="author" content="William Mbyamba Tshani">
+    <meta name="author" content="Florencia Taravella">
+    <meta
+  name="description" content="WDD 131 - Dynamic Web Fundamentals, Florencia Taravella. This is the Temple Album: hamburger menu and responsive menu">
+    <title> Temple Album </title>
+    <script src="scripts/temples.js" defer></script>
+    <link href="styles/temples-large.css" rel="stylesheet">
+    <link href="styles/temples.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="nameHolder">Temple Album</h1>
-        <button id="menu"></button>
-        <nav class="navigation">
-            <a class="active" href="">Home</a>
-            <a href="">Old</a>
-            <a href="">New</a>
-            <a href="">Large</a>
-            <a href="">Small</a>
+        <a id="menu" href="#"></a>
+        <nav class="navigation"> 
+            <ul>
+                <li> <a href="#"> Home </a></li>
+                <li> <a href=""> Old</a></li>
+                <li> <a href=""> New</a></li>
+                <li> <a href="">Large</a></li>
+                <li> <a href=""> Small</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <h2 class="home">Home</h2>
-        <div class="container home">
-            <figure>
-                <img class="img-temple" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg" 
-                loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
-            <figure>
-                <img class="img-temple"
-                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-                    loading="lazy" width="250" height="167">
-                <figcaption>Johannesburg South Africa</figcaption>
-            </figure>
+    <main> 
+        <h1> Temple Album</h1>
+        <h2> The Church of Jesus Christ of Latter Day Saints</h2>
+        <div class="temples">
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+        
+        <figure>
+             <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
+            
+        <figure>
+            <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple </figcaption>
+        </figure>
         </div>
     </main>
+    
     <footer>
-        <p>
-            &copy;<span id="currentyear">year</span> - William Mbuyamba Tshani - South Africa
-        </p>
-        <p id="lastModified">Whereas ipsum dolor, sit amet consectetur</p>
-    </footer>    
+        <p>© <span id="year"></span> *| Florencia Taravella |* Argentina </p>
+        <p> Last modification: <span id="lastmodified"></span> </p>
+    </footer>
 </body>
 </html>

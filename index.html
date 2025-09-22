@@ -3,74 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals – William Tshani</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, William Mbuyamaba Tshani, ">
-    <meta name="author" content="William Mbuyamba Tshani">
+    <meta name="author" content="Florencia Taravella" />
+    <meta
+  name="description" content="WDD 131 - Dynamic Web Fundamentals, Florencia Taravella. This is my index page. You will find the basic information about me.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Florencia Taravella".</title>
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="course-title">WDD131: Dynamic Web Fundamentals</span>
-        <nav>
-            <ul class="navigation">
-                <li><a href="https://www.linkedin.com/in/william-tshani-1a254860/" title="LinkedIn">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/4?lang=eng&id=p13#p13"
-                    title="Scripture">Scripture</a></li>
-                <li><a href="#" title="Final Projects">Final Projects</a></li>
-
-            </ul>
-            
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav  class="navigation">
+                <a href="https://www.linkedin.com/in/florencia-taravella-271806298/" title="LinkedIn"> LinkedIn </a>
+                <a href="https://byupw.instructure.com/" title="Canvas"> Canvas </a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/jer/17?lang=eng&id=p7-p8#p7" title="Scripture"> Scripture</a>
+                <a href="#" title="Final Project"> Final Project</a>
+                <a href="#" title="Contact"> Contact</a>
         </nav>
     </header>
     <main>
-        <h1>William Mbuyamba Tshani</h1>
-        <section class="card-01">
-            <h2>About Me</h2>
-            <div class="intro">
-                <p>
-                    I'm William Mbuyamba Tshani, currently living in Johannesburg, South Africa. I'm
-                    pursuing a Bachelor of Science in Applied Technology at BYU–Idaho.
-                    I'm passionate about leadership, innovation, and building systems that uplift communities. I love learning, mentoring, and exploring ideas that shape a better future for Africa.
-                </p>
-                <img src="images/william-tshani.png" alt="My Profile Picture">
-            </div>
-            <div class="johannesburg">
-                <h2>Johannesburg, South Africa</h2>
-                <figure>
-                    <img src="images/flag_of_south_africa.png" alt="Flag of South Africa">
-                    <p id="flag">Official flag of South Africa</p>
-                </figure>           
-                <p>
-                    South Africa is a vibrant and diverse nation known for its rich history, cultural heritage, and dynamic economy. As a
-                    land of innovation and transformation, it offers a powerful backdrop for learning, leadership, and meaningful impact.
-                    From its resilient communities to its evolving institutions, South Africa inspires those who seek to build, uplift, and lead with purpose.
-                </p>
-            </div>
+        <h1> Florencia Taravella</h1>
+        
+        <div class="content">
+        <section class="card about">    
+            
+            <h2> About me</h2>
+            <p> My name is Florencia from Argentina. I am studying Software Development because I love to learn and would like to invest in my cosmetic boutique laboratory <a href="https://bunibliss.mitiendanube.com/"></a>. I'm married to Marcos and have 3 beautiful childreN. I love to teach them about the Gospel.</p>
+            <img src="images/foto.jpg" alt="Picture of me">
+            
+            <p> This is the city of Catamarca, where we live. It is medium city in a northern province of the country. It has beautiful mountain sights and people are really nice and welcoming. We have a pleasant and tranquil life here. </p>
+             <img src="images/foto-catamarca.jpg" alt="Sight of Catamarca">
+
+
         </section>
-        <section class="card-02">
-            <h2>Web Dev Resources</h2>
-            <div>
-                <ul>
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/css/">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://picsum.photos/">Image Placeholder</a></li>
-                </ul>
-            </div>
+
+        <section class="card scripture">
+        <h2> Favorite scripture</h2>
+        <p > 7 Blessed is the man that trusteth in the Lord, and whose hope the Lord is.
+        8 For he shall be as a tree planted by the waters, and that spreadeth out her roots by the river, and shall not see when heat cometh, but her leaf shall be green; and shall not be careful in the year of drought, neither shall cease from yielding fruit.<a href="https://www.churchofjesuschrist.org/study/scriptures/ot/jer/7?lang=eng"></a>
+        </p>     
         </section>
+    </div>
+
     </main>
     <footer>
-        <p id="copy-right">
-            &copy;<span id="currentyear">year</span> - William Mbuyamba Tshani - South Africa
-        </p>
-        <p id="lastModified">Lorem ipsum dolor, sit amet consectetur</p>
+        <p>© <span id="year"></span> *| Florencia Taravella |* Argentina </p>
+        <p> Last modification: <span id="lastmodified"></span> </p>
     </footer>
 </body>
 </html>

@@ -3,94 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="descriotion" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Florencia Taravella">
+    <meta  name="description" content="WDD 131 - A place I would love to visit.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Florencia Taravella".</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet" rel="stylesheet">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">"
+    <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-large.css" rel="stylesheet">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Japon - Torii tunnels</h1>
+    <header class="page-hero">
+    <h1> Iguazú Falls</h1>
+    <div class="hero-image">
+    <picture>
+        <source srcset="images/iguazu-large.webp" media="(min-width:63em)">
+        <source srcset="images/iguazu-medium.webp" media="(min-width:32em)">
+        <img src="images/iguazu-small.webp" alt="Iguazú falls view" width="550" height="342">
+    </picture>
+    </div>
     </header>
-    <main class="container">
-        <div class="hero-section">
-            <picture class="hero">
-                <source srcset="images/hero-large.wep" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.wep" media="(min-width: 620px)">
-                <src="images/hero-small.wep" alt="Japan">
-            </picture>
-        </div>
-        <div class="data">
-            <h2 class="box-title">Data</h2>
-            <table>
-                <tr>
-                    <td class="label"><b>Area:</b></td>
-                    <td>377,975 km²</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Population:</b></td>
-                    <td>125,125,000</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Capital:</b></td>
-                    <td>Tokyo</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>languages:</b></td>
-                    <td>Japanese</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Currency:</b></td>
-                    <td>Japenese yen (JPY)</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Time Zone:</b></td>
-                    <td>Japan Standard Time (JST)</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Calling Code:</b></td>
-                    <td>+81</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Internet TLD:</b></td>
-                    <td>.jp</td>
-                </tr>
-            </table>
-        </div>
-        <div class="weather">
-            <h2 class="box-title">Weather <span class="weather-icon">&#9925;</span></h2>
-            <img src="images/weather-icon.svg" alt="light weather">
-            <table>
-                <tr>
-                    <td class="label"><b>Temperature:</b></td>
-                    <td>31 °C</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Conditions:</b></td>
-                    <td>Cloudy</td>
-                </tr>
-                <tr>
-                    <td class="label"><b>Wind:</b></td>
-                    <td>SW 7 km/h</td>
-                </tr>
-            </table>
-            <tr>
-                <td class="label"><b>Wind Chill:</b></td>
-                <td>10 °C</td>
-            </tr>
-        </div>
+    <main>
+    <div class="data">
+        <h2> Data</h2>
+        <dl>
+        <dt> Location:</dt>
+        <dd> Argentina & Brazil</dd>
+        <dt> Nearest population:</dt>
+        <dd> Puerto Iguazú</dd>
+        <dt> Currency:</dt>
+        <dd> Peso and Real</dd>
+        <dt>Description:</dt>
+        <dd> One of world's 7 wonders</dd>
+        <dt> Flow:</dt>
+        <dd> 1500m3/s</dd>
+        </dl>
+    </div>
+    <div class="weather">
+        <h2> Weather</h2>
+        <picture>
+           <source srcset="images/weather-icon.svg" media="(min-width:63em)"> 
+        <img src="images/weather-icon.svg" alt="Wather icon" width="70" height="70">
+        </picture>
+    
+        <dl>
+        <dt> Temperature:</dt>
+        <dd id="temp"> 25°C</dd>
+        <dt> Conditions:</dt>
+        <dd> Partly cloudy</dd>
+        <dt> Wind:</dt>
+        <dd id="wind"> 3km/h</dd>
+        <dt>Windchill:</dt>
+        <dd> <span id="wchill"></span></dd>
+    </dl>
+
+    </div>
     </main>
     <footer>
-        <p>
-            &copy;<span id="currentyear">year - William Mbuyamba Tshani - South Africa</span>
-        </p>
-        <p id="lastmodified">Wherea ipsum dolor, sit amet consectetur</p>
-    </footer>    
+        <p id="name">© <span id="year"></span> ✨| Florencia Taravella |✨ Argentina </p>
+        <p id="date"> Last modification: <span id="lastmodified"></span> </p>
+    </footer>
 </body>
 </html>

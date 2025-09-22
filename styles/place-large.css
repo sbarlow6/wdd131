@@ -1,0 +1,50 @@
+@media  screen and (min-width:32em) {
+    .page-hero picture{
+        display: flex;
+    }
+    .page-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* makes the image cover its box */
+}
+.data{
+    float: right;
+    position: absolute;
+    top: 140px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    width: 210px;
+    height: auto;
+    background-color: var(--bg3);
+    
+}
+.page-hero{
+    position: relative;
+}
+.weather{
+    float: right;
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 280px;
+    background-color: var(--bg3);
+   
+}
+.weather picture{
+    display: none;
+}
+.weather h2::after{
+    content: "🌦️"; 
+  font-size: 2rem;
+  position: absolute;
+  top: 33px;
+  right: 49px;
+}
+.weather h2{
+    position: relative;
+    align-self: baseline;
+    top: -6%;
+}
+}

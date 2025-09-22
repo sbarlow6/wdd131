@@ -1,6 +1,114 @@
-:root {
-    /* change the values below to your colors from your palette */
-    /* CSS HEX */
-    /* CSS HEX */
-    
+:root{
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Raleway: "Raleway", sans-serif;
+    --bg: #EDDDD4;
+    --bg2: #E0F2E9;
+    --bg3:#E0F2E9b3;
+    --box-color:#3581B8;
+    --font-color:#4A6670;
+
+
 }
+body{
+    font-family: var(--font-Roboto);
+}
+
+h1{
+    font-family: var(--font-Raleway);
+    text-align: center;
+    background-color: var(--bg);
+    padding: 10px;
+    color:var(--font-color);
+    font-size: 2rem;
+}
+.page-hero{
+    background-color: var(--box-color);
+    padding-bottom: 1rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+
+}
+.data{
+    background-color: var(--bg3);
+    padding: 1rem;
+}
+.data dl{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 1rem;
+}
+.data h2{
+    text-align: center;
+}
+.data dl dt{
+    margin-right: 0%;
+    text-align: end;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.data dl dd{
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+.weather{
+
+
+background-color: var(--bg2);
+    padding: 1rem;
+    }
+.weather dl{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 1rem;
+   
+}
+
+.weather h2{
+    padding-top: 1rem;
+    text-align: center;
+}
+.weather picture{
+    display: block;
+    text-align: center;
+}
+
+picture img{
+   align-content: center;
+
+}
+.weather dl dt{
+    margin-right: 0%;
+    text-align: end;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.weather dl dd{
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+footer{
+    background-color: var(--bg2);
+    font-size: 0.8rem;
+    padding: 1rem;
+    color:black;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+#date{
+    margin-top: 0%;
+}
+#name{
+    margin-bottom: 0%;
+}
+
+
+
+

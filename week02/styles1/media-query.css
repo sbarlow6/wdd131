@@ -1,0 +1,20 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+header main footer{
+    max-width: 640px;
+    margin: 1 rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1 rem;
+    background-color: #3b82f6; /* soft pastel blue */
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+section{
+ 
+    background-color: #e6f0fa;
+    padding: 1rem;
+}
