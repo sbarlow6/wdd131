@@ -1,84 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Yakan Frank</title>
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdates.js" defer></script>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course site by Yakan Frank. Explore weekly assignments, learn HTML, CSS, and JavaScript, and access curated web development resources to build dynamic, responsive websites.">
-
-  <meta name="author" content="Yakan Frank">
-  <!-- Preconnect for performance -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Font stylesheet -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – William Tshani</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, William Mbuyamaba Tshani, ">
+    <meta name="author" content="William Mbuyamba Tshani">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <header>
-   <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
-  <span class="highlight">– Yakan Frank</span>
-  <h1 id="student-name">Yakan Frank</h1>
+    <header>
+        <span id="course-title">WDD131: Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/william-tshani-1a254860/" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/4?lang=eng&id=p13#p13"
+                    title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Projects">Final Projects</a></li>
 
-  <nav>
-    <ul>
-      
-      <li><a href="https://www.linkedin.com/in/frank-job-a04389309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-      <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-      <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p17#p17" target="_blank">Scripture</a></li>
-      <li><a href="final-project/" target="_blank">Final Project</a></li>
-    </ul>
-  </nav>
-</header>
-  <main>
-    <section class="main-section card">
-      <div class="section-header">About Me</div>
-      <div class="about-content">
-        <div class="about-text">
-          <p>My name is Yakan Frank. I am excited to participate in WDD 131. I enjoy learning new web technologies and building dynamic web pages. I look forward to expanding my skills in HTML, CSS, and JavaScript through this course.</p>
-          <hr>
-          <h2 class="intro-title">Course Overview</h2>
-          <p>This site showcases assignments, resources, and projects for WDD 131 – Dynamic Web Fundamentals, created by Yakan Frank.</p>
-          <h2 class="location-title">My Country: Uganda</h2>
-
-          <div class="location-content">
-            <img src="images/uuuu.webp" alt="Official Flag of Uganda" class="flag-img">
-            <div>
-              <p>Uganda is a country in East Africa, known for its diverse wildlife and beautiful landscapes. It is home to many unique species and is famous for its national parks, lakes, and friendly people.</p>
-              <p class="flag-caption"><em>Official Flag of Uganda</em></p>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <h1>William Mbuyamba Tshani</h1>
+        <section class="card-01">
+            <h2>About Me</h2>
+            <div class="intro">
+                <p>
+                    I'm William Mbuyamba Tshani, currently living in Johannesburg, South Africa. I'm
+                    pursuing a Bachelor of Science in Applied Technology at BYU–Idaho.
+                    I'm passionate about leadership, innovation, and building systems that uplift communities. I love learning, mentoring, and exploring ideas that shape a better future for Africa.
+                </p>
+                <img src="images/william-tshani.png" alt="My Profile Picture">
             </div>
-          </div>
-        </div>
-        <div class="about-img">
-        <img src="images/photo1.jpg" alt="Yakan Frank">
-
-        </div>
-      </div>
-    </section>
-    <aside class="card">
-      <div class="section-header">Web Dev Resources</div>
-      <ul> 
-        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
-        <li><a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
-        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-        <li><a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a></li>
-      </ul>
-    </aside>
-  </main>
-  <footer>
-    <div class="footer-content">
-      <span>&copy;<span id="currentyear"></span> Yakan Frank <span class="footer-sep">|</span> Uganda</span>
-      <span id="lastmodified"></span>
-    </div>
-  </footer>
-  <script>
-    document.getElementById('currentyear').textContent = new Date().getFullYear();
-    document.getElementById('lastmodified').textContent = 'Last Modification: ' + document.lastModified;
-  </script>
-  
+            <div class="johannesburg">
+                <h2>Johannesburg, South Africa</h2>
+                <figure>
+                    <img src="images/flag_of_south_africa.png" alt="Flag of South Africa">
+                    <p id="flag">Official flag of South Africa</p>
+                </figure>           
+                <p>
+                    South Africa is a vibrant and diverse nation known for its rich history, cultural heritage, and dynamic economy. As a
+                    land of innovation and transformation, it offers a powerful backdrop for learning, leadership, and meaningful impact.
+                    From its resilient communities to its evolving institutions, South Africa inspires those who seek to build, uplift, and lead with purpose.
+                </p>
+            </div>
+        </section>
+        <section class="card-02">
+            <h2>Web Dev Resources</h2>
+            <div>
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/css/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://picsum.photos/">Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="copy-right">
+            &copy;<span id="currentyear">year</span> - William Mbuyamba Tshani - South Africa
+        </p>
+        <p id="lastModified">Lorem ipsum dolor, sit amet consectetur</p>
+    </footer>
 </body>
 </html>

@@ -1,4 +1,7 @@
-// Dynamically set the current year
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-// Dynamically set last modified date and time
-document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+//Footer information
+const currentYear = new Date().getFullYear();
+const lastModified = document.lastModified;
+const copyrightyearElement = document.getElementById('currentyear');
+const lastModifiedElement = document.getElementById('lastModified');
+copyrightyearElement.textContent = currentYear;
+lastModifiedElement.textContent = `Last Update: ${lastModified}`;

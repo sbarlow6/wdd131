@@ -1,21 +1,21 @@
-// 📅 Footer Date Handling
-const yearSpan = document.querySelector('#year');
-const lastModifiedSpan = document.querySelector('#lastModified');
+document.addEventListener('DOMContentLoaded', () => {
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+    const nameHeader = document.querySelector('.nameHeader'); // Select the h1 element
 
-const currentYear = new Date().getFullYear();
-const lastModified = document.lastModified;
-
-if (yearSpan) yearSpan.textContent = currentYear;
-if (lastModifiedSpan) lastModifiedSpan.textContent = lastModified;
-
-// 🍔 Hamburger Menu Toggle
-const hamburgerBtn = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-hamburgerBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+        nameHeader.classList.toggle('hidden'); // Toggle the 'hidden' class
+    });
 });
 
 
 
-
+// Footer information
+const currentYear = new Date().getFullYear();
+const lastModified = document.lastModified;
+const copyrightYearElement = document.getElementById('currentyear');
+const lastModifiedElement = document.getElementById('lastModified');
+copyrightYearElement.textContent = currentYear;
+lastModifiedElement.textContent = `Last update: ${lastModified}`;

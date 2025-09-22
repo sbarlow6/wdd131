@@ -1,121 +1,188 @@
-/* Google Font */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+:root {
+
+    /* change the values below to your colors from your palette */
+    --primary-color-Rich-black: #0D1B2A;
+    --secondary-color-Oxford-Blue: #1B263B;
+    --accent1-color-YInMn-Blue: #415A77;
+    --accent2-color-SilverLake-Blue: #778DA9;
+    --accent3-color-Platinum: #E0E1DD;
+
+    /* change the values below to your chosen font(s) */
+    --poppins-regular: "Poppins", sans-serif;
+    --poppins-regular-weight: 400;
+    --poppins-thin: "Poppins", sans-serif;
+    --poppins-thin-weight: 100;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(--primary-color-Rich-black);
+    /* headlines on a white background */
+    --headline-color-on-color: var(--accent3-color-Platinum);
+    /* headlines on a colored background */
+    --paragraph-color-on-white: var(--primary-color-Rich-black);
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: var(--accent3-color);
+    /* paragraph text on a colored background */
+    --paragraph-background-color: var(--secondary-color-Oxford-Blue);
+    --nav-link-color: var(--accent3-color-Platinum);
+    --nav-background-color: var(--secondary-color-Oxford-Blue);
+    --nav-hover-link-color: var(--accent2-color-SilverLake-Blue);
+    --nav-hover-background-color: var(--primary-color-Rich-black);
 }
 
-/* Header */
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--poppins-regular);
+    font-weight: var(--poppins-regular-weight);
+}
+
+
+/* mobile **************************/
+
 header {
-  background-color: #4B0082;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    color: var(--headline-color-on-color);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.5rem;
+    width: 190px;
+    margin: auto 5px;
+    font-size: 20px;
 }
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #4B0082;
-  padding: 0.5rem 1rem;
-  flex-wrap: wrap;
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--nav-background-color);
+    color: var(--accent1-color);
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
 }
 
-#hamburger {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: block;
+#menu::before {
+    content: "≡";
 }
 
-/* Hide nav links by default in mobile */
-#nav-links {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  background-color: #4B0082;
-  text-align: right;
+#menu.open::before {
+    content: "❎";
 }
 
-/* Show nav links when open */
-#nav-links.open {
-  display: flex;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
 }
 
-/* Nav link styles */
-#nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--nav-link-color);
+
 }
 
-#nav-links a:hover {
-  background-color: #6A0DAD;
+.navigation a:hover {
+    color: var(--accent3-color-Platinum);
+    text-decoration: underline 2px solid var(--accent3-color-Platinum);
+    transition: all 5ms ease-in-out;
 }
 
-/* Main Content */
+.open a {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* main */
+
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+    margin: 1rem auto;
+    max-width: 730px;
 }
 
-main h1,
-main h2 {
-  text-align: center;
-  margin-bottom: 1rem;
+.home {
+    border-bottom: 1px solid var(--headline-color-on-white);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-/* Grid Layout */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+.title {
+    margin-bottom: 20px;
 }
 
-figure {
-  margin: 0;
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+    margin: 5px 20px;
 }
 
-figure:hover {
-  transform: scale(1.02);
+
+
+.temple-card {
+    max-width: 300px;
+    height: 350px;
+    background-color: var(--accent3-color-Platinum);
 }
 
-img {
-  width: 100%;
-  display: block;
+.temple-card {
+    border: 1px solid #778DA9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0d1b2ac2;
+    margin-bottom: 30px;
 }
 
-figcaption {
-  padding: 0.5rem;
-  text-align: center;
-  font-weight: bold;
-  color: #4B0082;
+.temple-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
 }
+
+.temple-info {
+    margin-top: 10px;
+}
+
+.temple-info h2 {
+    font-size: 16px;
+    color: var(--secondary-color-Oxford-Blue);
+}
+
+.temple-info p {
+    font-size: 12px;
+    color: var(--accent1-color-YInMn-Blue);
+    padding: 5px;
+}
+
+.temple-info strong {
+    color: var(--headline-color-on-white);
+}
+
 
 /* Footer */
+
 footer {
-  background-color: #4B0082;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 16px;
 }

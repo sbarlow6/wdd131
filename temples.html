@@ -1,86 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore a responsive photo album showcasing beautiful Latter-day Saints temples with captions and grid layout.">
-  <meta name="author" content="YAKAN FRANK">
-  <title>Temple Album</title>
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="scripts/temples.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temple Album">
+    <meta name="keywords" content="Temple Album, Panama Temple">
+    <meta name="author" content="William Mbyamba Tshani">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Temple Album</h1>
-    <nav>
-      <button id="hamburger">&#9776;</button>
-      <div id="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
-     
-      </div>
-    </nav>
-  </header>
-
+    <header>
+        <h1 class="nameHolder">Temple Album</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a class="active" href="">Home</a>
+            <a href="">Old</a>
+            <a href="">New</a>
+            <a href="">Large</a>
+            <a href="">Small</a>
+        </nav>
+    </header>
     <main>
-        <h1>Welcome to the Temple Album - Home</h1>
-        <h2>Featured Temples</h2>
-  
-    <section class="grid">
-      <figure>
-        <img src="images/OIP.webp" alt="San Diego California Temple">
-        <figcaption>Stillness. Spirit.Strength. TempleMoments</figcaption>
-      </figure>
-      <figure>
-        <img src="images/Barran.webp" alt="San Diego California Temple">
-        <figcaption>A house of peace in a world of noise. LDSTemple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/OIP.webp" alt="San Diego California Temple">
-        <figcaption>Stillness. Spirit.Strength. TempleMoments</figcaption>
-      </figure>
-      <figure>
-        <img src="images/Barran.webp" alt="San Diego California Temple">
-        <figcaption>A house of peace in a world of noise. LDSTemple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/OIP.webp" alt="San Diego California Temple">
-        <figcaption>Stillness. Spirit.Strength. TempleMoments</figcaption>
-      </figure>
-      <figure>
-        <img src="images/Barran.webp" alt="San Diego California Temple">
-        <figcaption>A house of peace in a world of noise. LDSTemple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/OIP.webp" alt="San Diego California Temple">
-        <figcaption>Stillness. Spirit.Strength. TempleMoments</figcaption>
-      </figure>
-      <figure>
-        <img src="images/Barran.webp" alt="San Diego California Temple">
-        <figcaption>A house of peace in a world of noise. LDSTemple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/OIP.webp" alt="San Diego California Temple">
-        <figcaption>Stillness. Spirit.Strength. TempleMoments</figcaption>
-      </figure>
-    </section>
-  </main>
-
-   <footer>
-        <div class="footer-content">
-            <span>&copy;<span id="currentyear"></span> Powered By Frank Tech <span class="footer-sep"></span> Uganda </span>
-            <span id="lastmodified"></span>
+        <h2 class="home">Home</h2>
+        <div class="container home">
+            <figure>
+                <img class="img-temple" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg" 
+                loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+            <figure>
+                <img class="img-temple"
+                    src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+                    loading="lazy" width="250" height="167">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
         </div>
-    </footer>
-    <script>
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-        document.getElementById('lastmodified').textContent = 'last Modification: ' + document.lastModified;
-    </script>
-
-
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear">year</span> - William Mbuyamba Tshani - South Africa
+        </p>
+        <p id="lastModified">Whereas ipsum dolor, sit amet consectetur</p>
+    </footer>    
+</body>
 </html>
