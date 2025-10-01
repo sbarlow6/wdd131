@@ -1,42 +1,30 @@
-
 const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
 
-// Set last modified date
-document.getElementById("lastModified").textContent = document.lastModified;
-
-// =============================
-// Weather (Static for now)
-// =============================
-
-// Static values for temperature and wind speed
-const temperature = 26; // °C
-const windSpeed = 8;    // km/h
-
-// =============================
-// Wind Chill Calculation
-// =============================
-
-function calculateWindChill(tempC, speedKmh) {
-    return (
-        13.12 +
-        0.6215 * tempC -
-        11.37 * Math.pow(speedKmh, 0.16) +
-        0.3965 * tempC * Math.pow(speedKmh, 0.16)
-    ).toFixed(1);
+const yearSpan = document.getElementById('currentyear');
+if (yearSpan) {
+    yearSpan.textContent = `© ${currentYear}`;
 }
 
-// Determine if wind chill should be calculated
-let windChill = "N/A";
-if (temperature <= 10 && windSpeed > 4.8) {
-    windChill = `${calculateWindChill(temperature, windSpeed)} °C`;
+const lastMod = document.getElementById('lastModified');
+if (lastMod) {
+    lastMod.textContent = `Last modified: ${document.lastModified}`;
 }
 
-// =============================
-// Display Wind Chill in Weather Section
-// =============================
-
-const windChillElement = document.getElementById("windChill");
-if (windChillElement) {
-    windChillElement.textContent = windChill;
+function windChillCalc(temp,windsp) {
+    if (temp <= 10 && windsp > 4.8) {
+        return Math.round(13.12 + 0.6215 * temp - 11.37 * Math.pow(windsp, 0.16) + 0.3965 * temp * Math.pow(windsp, 0.16));
+    }
+    else {
+        return "N/A";
+    }
 }
+function displayWindChill() {
+    const tempE = document.getElementById('temp');
+    const windspE = document.getElementById('windsp');
+    const windChillE = document.getElementById('windchill');
+    const temperature = parseFloat(tempE.textContent);
+    const windSpeed = parseFloat(windspE.textContent);
+    const windChill = windChillCalc(temperature, windSpeed);
+    windChillE.textContent = windChill !== "N/A" ? windChill + "°C" : "N/A";
+}
+window.addEventListener('load', displayWindChill);

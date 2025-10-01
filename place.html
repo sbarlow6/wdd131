@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Emmanuel Boadu">
-    <meta name="description"
-        content="Discover Kumasi, Ghana — the cultural capital of the Ashanti Region. Learn about its history, attractions, weather, and vibrant lifestyle.">
+    <title>Dominican Republic web page</title>
+    <meta name="author" content="Crhistan Neftali Castro Melo">
+    <meta name="description" content="Dominican Republic web page">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Kumasi, Ghana</title>
-    <link rel="stylesheet" href="styles/place.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@100&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <h1>Kumasi</h1>
+        <h1>Dominican Republic</h1>
     </header>
-    <main> <!-- Responsive hero image -->
-        <picture>
-            <source srcset="images/kumasi-large.webp" media="(min-width: 1000px)">
-            <source srcset="images/kumasi-medium.webp" media="(min-width: 600px)">
-            <img src="images/kumasi-small.webp" alt="City of Kumasi, Ghana" width="1503" height="750"
-                fetchpriority="high">
-        </picture> <!-- Data Section -->
-        <section class="card data">
-            <div class="data-header">
-                <h2 class="card-header">Data</h2>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Enriquillo Lake" width="1500" height="750">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-tab">
+                <table>
+                    <tr>
+                        <td><strong>Area:</strong></td>
+                        <td>48,671 km²</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Population:</strong></td>
+                        <td>11,532,151</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Capital:</strong></td>
+                        <td>Santo Domingo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Language:</strong></td>
+                        <td>Spanish</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Currency:</strong></td>
+                        <td>Dominican Peso</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time Zone:</strong></td>
+                        <td>UTC-4:00</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Calling Code:</strong></td>
+                        <td>+1</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Internet TLD:</strong></td>
+                        <td>.do</td>
+                    </tr>
+                </table>
             </div>
-            <div class="card-body">
-                <ul>
-                    <li><strong>Country:</strong> Ghana</li>
-                    <li><strong>Region:</strong> Ashanti</li>
-                    <li><strong>Population:</strong> ~3,348,000 (metro)</li>
-                    <li><strong>Known for:</strong> Kejetia Market, Manhyia Palace</li>
-                    <li><strong>Currency:</strong> Ghanaian Cedi (GHS)</li>
-                    <li><strong>Time Zone:</strong> UTC+0</li>
-                    <li><strong>Calling Code:</strong> +233</li>
-                    <li><strong>Internet TLD:</strong> .gh</li>
-                </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <img src="images/weather-icon.svg" alt="Weather icon">
             </div>
-        </section> <!-- Weather Section -->
-        <section class="card weather">
-            <div class="weather-header">
-                <h2 class="card-header">Weather</h2>
-                <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
-            </div>
-            <div class="card-body">
-                <ul>
-                    <li><strong>Temperature:</strong> 26°C</li>
-                    <li><strong>Conditions:</strong> Partly Cloudy</li>
-                    <li><strong>Wind:</strong> 8 km/h</li>
-                    <li><strong>Humidity:</strong> 75%</li>
-                </ul>
+            <div class="weather-tab">
+                <table>
+                    <tr>
+                        <td><strong>Temperature:</strong></td>
+                        <td><span id="temp">26</span>°C</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Conditions:</strong></td>
+                        <td><span>Very Cloudy</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wind:</strong></td>
+                        <td><span id="windsp">5</span>km/h</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wind Chill:</strong></td>
+                        <td><span id="windchill"></span></td>
+                    </tr>
+                </table>
             </div>
         </section>
     </main>
     <footer>
-        <p>© <span id="currentYear"></span> Emmanuel Boadu 🌍 Kumasi, Ghana</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-    </footer> <!-- External JS file with defer -->
-    <script src="scripts/place.js" defer></script>
+        <p><span id="currentyear"></span> 🌊 Crhistan Castro Melo 🌊 Santo Domingo, Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
-
 </html>

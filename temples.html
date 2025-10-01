@@ -1,94 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Temple Album - Week 02 project showcasing a responsive gallery of sacred architecture from around the world.">
-    <meta name="author" content="Emmanuel Boadu">
-    <title>Temple Album-Week 02</title>
-    <!-- Google Fonts -->
+    <title>Temple Album</title>
+    <meta name="Description" content="Image album of some temples around the world.">
+    <meta name="Author" content="Crhistan Castro">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <!-- Mobile-first CSS -->
-    <link rel="stylesheet" href="styles/temples.css">
-    <!-- Larger screen styles -->
-    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@100&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button id="menuButton" aria-label="Menu">☰</button>
-        <nav id="navMenu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
+        <button id="menu">☰</button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
         </nav>
     </header>
-
     <main>
-        <h2>Temple Gallery</h2>
-
-        <figure>
-            <img src="images/accra-ghana-temple.jpg" alt="Temple in Accra Ghana" width="800" height="600">
-            <figcaption>Accra Ghana Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="Temple in Albuquerque New Mexico" width="800" height="600">
-            <figcaption>Albuquerque Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/anchorage-temple.jpg" alt="Temple in Anchorage Alaska" width="800" height="600">
-            <figcaption>Anchorage Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/asuncion-paraguay-temple.jpg" alt="Temple in Asunción Paraguay" width="800" height="600">
-            <figcaption>Asunción Paraguay Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/apia-samoa-temple.jpg" alt="Temple in Apia Samoa" width="800" height="600">
-            <figcaption>Apia Samoa Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/atlanta-temple.jpg" alt="Temple in Atlanta Georgia" width="800" height="600">
-            <figcaption>Atlanta Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/belem-brazil-temple.jpg" alt="Temple in Belém Brazil" width="800" height="600">
-            <figcaption>Belém Brazil Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/bern-switzerland-temple.jpg" alt="Temple in Bern Switzerland" width="800" height="600">
-            <figcaption>Bern Switzerland Temple</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/bismarck-north-dakota-temple.jpg" alt="Temple in Bismarck North Dakota" width="800"
-                height="600">
-            <figcaption>Bismarck North Dakota Temple</figcaption>
-        </figure>
+        <h2>Home</h2>
+        <div class="img-grid">
+            <figure>
+                <img src="images/santo-domingo-dominican-republic-temple_11zon.webp" alt="Santo Domingo, Dominican Republic Temple" width="600" height="400">
+                <figcaption>Santo Domingo, Dominican Republic Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/merida-mexicotemple_11zon.webp" alt="Merida, Mexico Temple" width="600" height="400">
+                <figcaption>Merida, Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mexico-city-temple_11zon.webp" alt="Mexico City Temple" width="600" height="400">
+                <figcaption>Mexico City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rexburg-temple_11zon.webp" alt="Rexburg, Idaho Temple" width="600" height="400">
+                <figcaption>Rexburg, Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sao-paulo-brazil-temple_11zon.webp" alt="Sao Paulo, Brazil Temple" width="600" height="400">
+                <figcaption>Sao Paulo, Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/slctemple_11zon.webp" alt="Salt Lake City, Utah Temple" width="600" height="400">
+                <figcaption>Salt Lake City, Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san_juan_puerto_rico_temple_11zon.webp" alt="San Juan, Puerto Rico Temple" width="600" height="400">
+                <figcaption>San Juan, Puerto Rico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rome-Temple_11zon.webp" alt="Rome, Italy Temple" width="600" height="400">
+                <figcaption>Rome, Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Sapporo-Japan_11zon.webp" alt="Sapporo, Japan Temple" width="600" height="400">
+                <figcaption>Sapporo, Japan Temple</figcaption>
+            </figure>
+        </div>
     </main>
-
     <footer>
-        <p>&copy; <span id="currentyear"></span> Emmanuel Boadu, Ghana</p>
+        <p><span id="currentyear"></span> 🌊 Crhistan Castro Melo 🌊 Santo Domingo, Dominican Republic</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/temples.js" defer></script>
-
 </body>
-
 </html>

@@ -1,25 +1,23 @@
-h1 {
-    text-align: center;
-
-}
-
-main{
+main {
     margin: 0 auto;
     width: 400px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 img {
+    display: block;
+    animation: fade 15s;
     width: 100%;
-    background: color #000;
-    animation: 15s;
+    background: black;
+    margin-bottom: 10px;
 }
 
 @keyframes fade {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
