@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script>
+        // counter logic
+        document.addEventListener("DOMContentLoaded", () => {
+            let count = localStorage.getItem("reviewCount") || 0;
+            count++;
+            localStorage.setItem("reviewCount", count);
+            document.getElementById("counter").textContent = count;
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Review Submitted!</h1>
+    </header>
+
+    <main>
+        <p>Thank you for submitting your product review. 🎉</p>
+        <p>You have submitted <strong><span id="counter" aria-live="polite"></span></strong> reviews so far.</p>
+
+    </main>
+
+    <footer>
+        <p>© 2025 | Product Review Assignment | Emmanuel Boadu</p>
+    </footer>
+</body>
+
+</html>

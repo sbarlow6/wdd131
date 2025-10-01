@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmanuel Boadu">
+    <meta name="description"
+        content="Discover Kumasi, Ghana — the cultural capital of the Ashanti Region. Learn about its history, attractions, weather, and vibrant lifestyle.">
+    <title>Kumasi, Ghana</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kumasi</h1>
+    </header>
+    <main> <!-- Responsive hero image -->
+        <picture>
+            <source srcset="images/kumasi-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/kumasi-medium.webp" media="(min-width: 600px)">
+            <img src="images/kumasi-small.webp" alt="City of Kumasi, Ghana" width="1503" height="750"
+                fetchpriority="high">
+        </picture> <!-- Data Section -->
+        <section class="card data">
+            <div class="data-header">
+                <h2 class="card-header">Data</h2>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Country:</strong> Ghana</li>
+                    <li><strong>Region:</strong> Ashanti</li>
+                    <li><strong>Population:</strong> ~3,348,000 (metro)</li>
+                    <li><strong>Known for:</strong> Kejetia Market, Manhyia Palace</li>
+                    <li><strong>Currency:</strong> Ghanaian Cedi (GHS)</li>
+                    <li><strong>Time Zone:</strong> UTC+0</li>
+                    <li><strong>Calling Code:</strong> +233</li>
+                    <li><strong>Internet TLD:</strong> .gh</li>
+                </ul>
+            </div>
+        </section> <!-- Weather Section -->
+        <section class="card weather">
+            <div class="weather-header">
+                <h2 class="card-header">Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Temperature:</strong> 26°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> 8 km/h</li>
+                    <li><strong>Humidity:</strong> 75%</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Emmanuel Boadu 🌍 Kumasi, Ghana</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer> <!-- External JS file with defer -->
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>

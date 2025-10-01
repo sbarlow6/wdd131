@@ -1,0 +1,134 @@
+:root {
+    --primary: #006b3f;
+    /* Ghana green */
+    --secondary: #fcd116;
+    /* Ghana yellow */
+    --accent: #ce1126;
+    /* Ghana red */
+    --light: #ffffff;
+    --dark: #222222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--accent);
+    color: var(--light);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    position: absolute;
+    width: 320px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 1rem 1.2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0.4rem 0;
+}
+
+.data-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.data-header .card-header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.data {
+    top: 40px;
+    left: 40px;
+}
+
+.weather {
+    bottom: 40px;
+    right: 40px;
+}
+
+/* NEW: Weather header with icon beside heading */
+.weather-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.weather-header .card-header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.weather-icon {
+    width: 32px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 1.2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .card {
+        position: static;
+        width: 90%;
+        margin: 1rem auto;
+    }
+}

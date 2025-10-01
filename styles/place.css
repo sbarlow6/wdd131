@@ -1,114 +1,145 @@
-:root{
-    --font-Roboto: "Roboto", sans-serif;
-    --font-Raleway: "Raleway", sans-serif;
-    --bg: #EDDDD4;
-    --bg2: #E0F2E9;
-    --bg3:#E0F2E9b3;
-    --box-color:#3581B8;
-    --font-color:#4A6670;
-
-
-}
-body{
-    font-family: var(--font-Roboto);
+:root {
+    --primary: #006b3f;
+    /* Ghana green */
+    --secondary: #fcd116;
+    /* Ghana yellow */
+    --accent: #ce1126;
+    /* Ghana red */
+    --light: #ffffff;
+    --dark: #222222;
 }
 
-h1{
-    font-family: var(--font-Raleway);
+* {
+    box-sizing: border-box;
+}
+
+bbody {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--accent);
+    color: var(--light);
     text-align: center;
-    background-color: var(--bg);
-    padding: 10px;
-    color:var(--font-color);
-    font-size: 2rem;
+    padding: 2rem 1rem;
 }
-.page-hero{
-    background-color: var(--box-color);
-    padding-bottom: 1rem;
-}
-img{
-    max-width: 100%;
-    height: auto;
 
-
-}
-.data{
-    background-color: var(--bg3);
-    padding: 1rem;
-}
-.data dl{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    font-size: 1rem;
-}
-.data h2{
-    text-align: center;
-}
-.data dl dt{
-    margin-right: 0%;
-    text-align: end;
-    font-size: 0.8rem;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
     font-weight: bold;
-}
-.data dl dd{
-    margin-left: 0.5rem;
-    font-size: 0.8rem;
-}
-.weather{
-
-
-background-color: var(--bg2);
-    padding: 1rem;
-    }
-.weather dl{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    font-size: 1rem;
-   
+    letter-spacing: 1px;
 }
 
-.weather h2{
-    padding-top: 1rem;
-    text-align: center;
-}
-.weather picture{
+/* ::after pseudo-element */
+header h1::after {
+    content: "";
     display: block;
+    width: 60px;
+    height: 4px;
+    margin: 0.5rem auto 0;
+    background-color: var(--secondary);
+    border-radius: 2px;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    position: absolute;
+    width: 320px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 1rem 1.2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0.4rem 0;
+}
+
+.data-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.data-header .card-header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.data {
+    top: 40px;
+    left: 40px;
+}
+
+.weather {
+    bottom: 40px;
+    right: 40px;
+}
+
+/* NEW: Weather header with icon beside heading */
+.weather-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.weather-header .card-header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.weather-icon {
+    width: 32px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--light);
     text-align: center;
-}
-
-picture img{
-   align-content: center;
-
-}
-.weather dl dt{
-    margin-right: 0%;
-    text-align: end;
-    font-size: 0.8rem;
+    padding: 1.2rem;
     font-weight: bold;
 }
-.weather dl dd{
-    margin-left: 0.5rem;
-    font-size: 0.8rem;
-}
-footer{
-    background-color: var(--bg2);
-    font-size: 0.8rem;
-    padding: 1rem;
-    color:black;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-}
-#date{
-    margin-top: 0%;
-}
-#name{
-    margin-bottom: 0%;
-}
 
-
-
-
+@media (max-width: 600px) {
+    .card {
+        position: static;
+        width: 90%;
+        margin: 1rem auto;
+    }
+}

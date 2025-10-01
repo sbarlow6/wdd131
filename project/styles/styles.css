@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    margin: 2em;
+}
+
+h1,
+h2 {
+    color: #1f5f3f;
+}
+
+.accent {
+    color: #cc3f2f;
+}
+
+ul {
+    line-height: 1.6;
+}
+
+.wireframe {
+    border: 1px dashed #ccc;
+    padding: 1em;
+    background-color: #fff;
+    margin-top: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+}

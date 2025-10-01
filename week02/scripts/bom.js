@@ -1,39 +1,37 @@
-const favchap=document.getElementById("favchap");
-const submit=document.getElementById("submit");
-const list=document.getElementById("list");
+console.log("bom.js is running");
 
+const input = document.querySelector('#favchap');
+const button = document.querySelector('button');
+const list = document.querySelector('#list');
 
+button.addEventListener('click', function () {
+  const chapterName = input.value.trim();
+  input.focus();
 
-submit.addEventListener("click",function(){
-    
-    if (favchap.value.trim() !=='')
-        {
-        const li=document.createElement("li");
-        li.textContent=favchap.value
-        list.appendChild(li)  //ul=list  is the parent of the li element
-        
-        const deleteButton=document.createElement("button");
-        deleteButton.textContent="❌";
-        deleteButton.setAttribute("aria-label","Delete item")
-        li.append(deleteButton);
-            
-            deleteButton.addEventListener("click", function(){
-            list.removeChild(li);
-            favchap.focus();
-})
+  if (chapterName !== '') {
+    const li = document.createElement('li');
+    li.textContent = chapterName;
 
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = '❌';
+    deleteButton.classList.add('delete');
+    deleteButton.setAttribute('aria-label', `Remove ${chapterName}`);
 
-        favchap.value="";
-        favchap.focus();
-        } 
-    else {alert("Please, enter a valid chapter");
-        favchap.focus();
-    }
+    li.append(deleteButton);
+    list.append(li);
+
+    input.value = '';
+  } else {
+    alert('Please enter a chapter name.');
+  }
 });
 
-
-
-
-
-
-
+list.addEventListener('click', function (e) {
+  if (e.target.classList.contains('delete')) {
+    const li = e.target.closest('li');
+    if (li) {
+      list.removeChild(li);
+      input.focus();
+    }
+  }
+});

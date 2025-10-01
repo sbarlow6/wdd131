@@ -1,17 +1,20 @@
-const year = document.querySelector("#year"); //grabs the element which id=year in HTML
+// Dynamically set the current year in the footer
+const currentYear = new Date().getFullYear();
+document.getElementById("currentyear").textContent = currentYear;
 
-const today = new Date();  // use the date object
+// Dynamically format the last modified date
+const lastModifiedDate = new Date(document.lastModified);
 
-year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`; //I'm creating an element in HTML 
+// Format as DD/MM/YYYY HH:MM:SS
+const formattedDate = lastModifiedDate.toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false
+});
 
-const lastmodified=document.querySelector("#lastmodified");
-
-const today2=new Date();
-
-const shortDate  = new Intl.DateTimeFormat("en-US", { dateStyle: "short", timeStyle: "short"}).format(today2); //The Intl.DateTimeFormat constructor lets you format dates according to locale rules.
-
-lastmodified.innerHTML = `<span class="highlight">${new Intl.DateTimeFormat(
-  "en-US", { dateStyle: "short" , timeStyle: "short"}
-).format(today2)}</span>`;
-
-
+// Insert into <p id="lastModified">
+document.getElementById("lastModified").textContent = `Last Modification: ${formattedDate}`;

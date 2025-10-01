@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    input {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 8px 12px;
+      font-size: 16px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f9f9;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    li button {
+      font-size: 12px;
+      color: white;
+      background-color: red;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🛒 My Shopping List</h1>
+
+  <div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" id="item" name="item">
+    <button id="addBtn">Add item</button>
+  </div>
+
+  <ul id="shoppingList"></ul>
+
+  <script>
+    const list = document.getElementById("shoppingList");
+    const input = document.getElementById("item");
+    const button = document.getElementById("addBtn");
+
+    function addItem() {
+      const text = input.value.trim();
+      if (text === "") return;
+
+      const listItem = document.createElement("li");
+      const span = document.createElement("span");
+      const deleteButton = document.createElement("button");
+
+      span.textContent = text;
+      deleteButton.textContent = "Delete";
+
+      deleteButton.addEventListener("click", () => {
+        listItem.remove();
+      });
+
+      listItem.appendChild(span);
+      listItem.appendChild(deleteButton);
+      list.appendChild(listItem);
+
+      input.value = "";
+      input.focus();
+    }
+
+    button.addEventListener("click", addItem);
+
+    // Optional: Add support for Enter key
+    input.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        addItem();
+      }
+    });
+  </script>
+
+</body>
+
+</html>

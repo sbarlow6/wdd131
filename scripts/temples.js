@@ -1,23 +1,35 @@
-const year = document.querySelector("#year"); //grabs the element which id=year in HTML
+// scripts/temples.js
+document.addEventListener("DOMContentLoaded", () => {
+    // Dynamically set the current year
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-const today = new Date();  // use the date object
+    // Dynamically set the last modified date
+    const lastModifiedDate = new Date(document.lastModified);
 
-year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`; //I'm creating an element in HTML 
+    // Format as DD/MM/YYYY HH:MM:SS
+    const formattedDate = lastModifiedDate.toLocaleString("en-GB", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+    });
 
-const lastmodified=document.querySelector("#lastmodified");
+    document.getElementById("lastModified").textContent =
+        `Last Modification: ${formattedDate}`;
 
-const today2=new Date();
+    // ✅ Hamburger menu toggle
+    const menuButton = document.getElementById("menuButton");
+    const navMenu = document.getElementById("navMenu");
 
-const shortDate  = new Intl.DateTimeFormat("en-US", { dateStyle: "short", timeStyle: "short"}).format(today2); //The Intl.DateTimeFormat constructor lets you format dates according to locale rules.
+    if (menuButton && navMenu) {
+        menuButton.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
 
-lastmodified.innerHTML = `<span class="highlight">${new Intl.DateTimeFormat(
-  "en-US", { dateStyle: "short" , timeStyle: "short"}
-).format(today2)}</span>`;
-
-const mainnav=document.querySelector(".navigation")
-const hambutton=document.querySelector("#menu")
-hambutton.addEventListener("click",()=>{
-  mainnav.classList.toggle("show");
-  hambutton.classList.toggle("show");
-
+            // Switch between ☰ and ✖
+            menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
+        });
+    }
 });

@@ -1,0 +1,16 @@
+@media screen and (min-width: 500px) {
+
+    /* Header styling for larger screens */
+    header {
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* Main layout: two equal columns */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
+    }
+}

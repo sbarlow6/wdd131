@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temple Album</title>
-  <link rel="stylesheet" href="styles/filtered-styles.css" />
-  <link rel="stylesheet" href="styles/filtered-styles-large.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="scripts/filtered-script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emmanuel Boadu">
+  <meta name="description"
+    content="Explore a gallery of temples worldwide with photos, dedication dates, locations, and sizes.">
+  <title>Filtered Temples</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/filtered-temples.css">
 </head>
 <body>
-  <header>
+<header>
     <h1>Temple Album</h1>
-    <button id="menu-button">&#9776;</button>
-    <button onclick="filterTemples('home')">Home</button>
-    <button onclick="filterTemples('old')">Old</button>
-    <button onclick="filterTemples('new')">New</button>
-    <button onclick="filterTemples('large')">Large</button>
-    <button onclick="filterTemples('small')">Small</button>
-
-
-    <nav id="nav-menu">
-      <a href="#">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
+    <nav aria-label="Temple filters">
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="old">Old</a></li>
+            <li><a href="#" id="new">New</a></li>
+            <li><a href="#" id="large">Large</a></li>
+            <li><a href="#" id="small">Small</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <h1>Temples</h1>
-    <div id="temple-cards" class="container"></div>
-  </main>
+
+  <main id="templeContainer"></main>
 
   <footer>
-    <p>&copy; <span id="year"></span> | Elías Cabeza de Vaca | Guayaquil, Ecuador</p>
-    <p>Last Modified: <span id="last-modified"></span></p>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Boadu, Ghana</p>
+    <p id="lastModified"></p>
   </footer>
+
+  <script src="scripts/filtered-temples.js" defer></script>
 </body>
 </html>

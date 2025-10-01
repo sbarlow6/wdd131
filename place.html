@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Florencia Taravella">
-    <meta  name="description" content="WDD 131 - A place I would love to visit.">
-    <title>WDD 131 - Dynamic Web Fundamentals - Florencia Taravella".</title>
+    <meta name="author" content="Emmanuel Boadu">
+    <meta name="description"
+        content="Discover Kumasi, Ghana — the cultural capital of the Ashanti Region. Learn about its history, attractions, weather, and vibrant lifestyle.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="styles/place.css" rel="stylesheet">
-    <link href="styles/place-large.css" rel="stylesheet">
-    <script src="scripts/place.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Kumasi, Ghana</title>
+    <link rel="stylesheet" href="styles/place.css">
 </head>
-<body>
-    <header class="page-hero">
-    <h1> Iguazú Falls</h1>
-    <div class="hero-image">
-    <picture>
-        <source srcset="images/iguazu-large.webp" media="(min-width:63em)">
-        <source srcset="images/iguazu-medium.webp" media="(min-width:32em)">
-        <img src="images/iguazu-small.webp" alt="Iguazú falls view" width="550" height="342">
-    </picture>
-    </div>
-    </header>
-    <main>
-    <div class="data">
-        <h2> Data</h2>
-        <dl>
-        <dt> Location:</dt>
-        <dd> Argentina & Brazil</dd>
-        <dt> Nearest population:</dt>
-        <dd> Puerto Iguazú</dd>
-        <dt> Currency:</dt>
-        <dd> Peso and Real</dd>
-        <dt>Description:</dt>
-        <dd> One of world's 7 wonders</dd>
-        <dt> Flow:</dt>
-        <dd> 1500m3/s</dd>
-        </dl>
-    </div>
-    <div class="weather">
-        <h2> Weather</h2>
-        <picture>
-           <source srcset="images/weather-icon.svg" media="(min-width:63em)"> 
-        <img src="images/weather-icon.svg" alt="Wather icon" width="70" height="70">
-        </picture>
-    
-        <dl>
-        <dt> Temperature:</dt>
-        <dd id="temp"> 25°C</dd>
-        <dt> Conditions:</dt>
-        <dd> Partly cloudy</dd>
-        <dt> Wind:</dt>
-        <dd id="wind"> 3km/h</dd>
-        <dt>Windchill:</dt>
-        <dd> <span id="wchill"></span></dd>
-    </dl>
 
-    </div>
+<body>
+    <header>
+        <h1>Kumasi</h1>
+    </header>
+    <main> <!-- Responsive hero image -->
+        <picture>
+            <source srcset="images/kumasi-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/kumasi-medium.webp" media="(min-width: 600px)">
+            <img src="images/kumasi-small.webp" alt="City of Kumasi, Ghana" width="1503" height="750"
+                fetchpriority="high">
+        </picture> <!-- Data Section -->
+        <section class="card data">
+            <div class="data-header">
+                <h2 class="card-header">Data</h2>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Country:</strong> Ghana</li>
+                    <li><strong>Region:</strong> Ashanti</li>
+                    <li><strong>Population:</strong> ~3,348,000 (metro)</li>
+                    <li><strong>Known for:</strong> Kejetia Market, Manhyia Palace</li>
+                    <li><strong>Currency:</strong> Ghanaian Cedi (GHS)</li>
+                    <li><strong>Time Zone:</strong> UTC+0</li>
+                    <li><strong>Calling Code:</strong> +233</li>
+                    <li><strong>Internet TLD:</strong> .gh</li>
+                </ul>
+            </div>
+        </section> <!-- Weather Section -->
+        <section class="card weather">
+            <div class="weather-header">
+                <h2 class="card-header">Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Temperature:</strong> 26°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> 8 km/h</li>
+                    <li><strong>Humidity:</strong> 75%</li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
-        <p id="name">© <span id="year"></span> ✨| Florencia Taravella |✨ Argentina </p>
-        <p id="date"> Last modification: <span id="lastmodified"></span> </p>
-    </footer>
+        <p>© <span id="currentYear"></span> Emmanuel Boadu 🌍 Kumasi, Ghana</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer> <!-- External JS file with defer -->
+    <script src="scripts/place.js" defer></script>
 </body>
+
 </html>

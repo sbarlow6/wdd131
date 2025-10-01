@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #486788;
+    border: none;
+    border-radius: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #365a75;
+}
+
+button.delete {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 20px;
+    text-align: center;
+}
+
+main p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0.5px;
+}
+
+input[type="text"] {
+    display: inline-block;
+    text-align: left;
+}
+
+.input button {
+    margin-left: 40px;
+    flex-shrink: 0;
+}
+
+.list {
+    padding: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 100%;
+        max-width: 600px;
+    }
+}

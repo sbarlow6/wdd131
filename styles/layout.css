@@ -1,0 +1,66 @@
+/* Base layout using CSS Grid on <body> */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Header section */
+header {
+    grid-area: header;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+}
+
+/* Flexbox navigation menu */
+nav ul {
+    display: flex;
+    gap: 36rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    grid-area: main;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+/* Sidebar section */
+aside {
+    grid-area: aside;
+    padding: 1rem;
+    background-color: #e6f2ff;
+}
+
+/* Footer section */
+footer {
+    grid-area: footer;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
