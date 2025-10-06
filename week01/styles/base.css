@@ -1,0 +1,180 @@
+﻿/*
+  Author: Rafael Parra
+  WDD 131 - Dynamic Web Fundamentals
+  Main CSS file for index.html
+*/
+
+:root {
+    --primary-bg: #232946;
+    --primary-text: #fff;
+    --accent-bg: #ccdbdc;
+    --accent-text: #003249;
+    --card-bg: #9ad1d4;
+    --card-border: #007ea7;
+    --nav-hover: #007ea7;
+    --nav-active: #80ced7;
+    --font-main: 'Noto Sans', Arial, sans-serif;
+    --font-accent: 'Lato', 'Noto Sans', Arial, sans-serif;
+  --prussian-blue: #003049;
+  --platinum: #eaeaea;
+  --cerulean: #007ea7;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 120px 1fr 100px;
+    font-family: var(--font-main), serif;
+    background: var(--accent-bg);
+    color: var(--accent-text);
+}
+
+
+header {
+    grid-area: header;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+#course-title {
+    display: block;
+    font-size: 2rem;
+    font-family: var(--font-accent), serif;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+  background: var(--prussian-blue);
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    height: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+}
+
+nav a {
+  color: var(--platinum);
+    text-decoration: none;
+  font-family: var(--font-family-accent), serif;
+    font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.5rem 2.5rem;
+  transition: color 0.2s, background 0.2s;
+  display: inline-block;
+  text-align: center;
+}
+
+nav a:hover, nav a:focus {
+  color: var(--cerulean);
+  background: var(--platinum);
+    border-radius: 4px;
+}
+
+main {
+    grid-area: main;
+    background: var(--card-bg);
+    border-left: 4px solid var(--card-border);
+    padding: 2rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: var(--accent-bg);
+    border: 2px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2 {
+    font-family: var(--font-accent), serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside;
+    background: var(--accent-bg);
+    padding: 2rem;
+    font-size: 1.1rem;
+    border-left: 4px solid var(--card-border);
+    color: var(--accent-text);
+}
+
+aside h2 {
+    font-family: var(--font-accent), serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+aside ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+aside li {
+    margin-bottom: 0.7rem;
+}
+
+aside a {
+    color: var(--card-border);
+    text-decoration: underline;
+    font-family: var(--font-accent), serif;
+    transition: color 0.2s;
+}
+
+aside a:hover, aside a:focus {
+    color: var(--nav-hover);
+}
+
+footer {
+    grid-area: footer;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: var(--font-accent), serif;
+    border-top: 2px solid var(--card-border);
+    flex-direction: column;
+    padding: 1rem 0 0.5rem 0;
+}
+
+#lastModified {
+    color: var(--nav-active);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}

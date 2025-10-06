@@ -1,45 +1,38 @@
-@media screen and (max-width:500px) { 
-    .hero img {
-        width: 100%;
-        height: auto;
-    }
-    .data, .weather {
-        position: relative;
-        width: 100%;
-        top: auto;
-        left: auto;
-        right: auto;
-        margin-bottom: 20px;
-        padding: 10px;
-        text-align: center;
-        background-color: transparent;
-        box-sizing: border-box;
-    }
-    .data-tab table, .weather-tab table {
-        font-size: larger;
-        table-layout: auto;
-    }
-    .weather h2::after {
-        content: "";
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-        vertical-align: middle;
-    }
-    .weather-icon {
-        display: flex;
-        width: 100px;
-        height: 100px;
-        margin-top: 10px;
-        background-image: url(../images/weather-icon.svg);
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-        background-position: center;
-        text-align: center;
-        margin: 0 auto;
-    }
+﻿main {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero { position: relative; }
+
+@media (min-width: 800px) {
+  main { padding: 1.25rem; }
+  .hero img { height: 520px; object-fit: cover; width: 100%; }
+
+  .info, .weather {
+    position: absolute;
+    top: 140px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+  }
+  .info { left: 2.5rem; }
+  .weather { right: 2.5rem; }
+
+  .weather .icon {
+    display: none;
+  }
+
+  .weather h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .weather h2::after {
+    content: '⛅';
+    font-size: 2rem;
+  }
 }

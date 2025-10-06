@@ -1,30 +1,30 @@
-const currentYear = new Date().getFullYear();
+﻿/*
+ * place.js
+ * - Calculates wind chill factor
+ * - Updates footer copyright year and last modified date
+ */
 
-const yearSpan = document.getElementById('currentyear');
-if (yearSpan) {
-    yearSpan.textContent = `© ${currentYear}`;
+// Static values for temperature and wind speed
+const temperature = 14; // °C
+const windSpeed = 12; // km/h
+
+// Function to calculate wind chill factor
+function calculateWindChill(temp, speed) {
+  // Formula for Celsius: 13.12 + 0.6215*T - 11.37*V^0.16 + 0.3965*T*V^0.16
+  return (13.12 + (0.6215 * temp) - (11.37 * Math.pow(speed, 0.16)) + (0.3965 * temp * Math.pow(speed, 0.16))).toFixed(1) + "°C";
 }
 
-const lastMod = document.getElementById('lastModified');
-if (lastMod) {
-    lastMod.textContent = `Last modified: ${document.lastModified}`;
+// Check if conditions are met for wind chill calculation
+const windchillElement = document.getElementById("windchill");
+if (temperature <= 10 && windSpeed > 4.8) {
+  windchillElement.textContent = calculateWindChill(temperature, windSpeed);
+} else {
+  windchillElement.textContent = "N/A";
 }
 
-function windChillCalc(temp,windsp) {
-    if (temp <= 10 && windsp > 4.8) {
-        return Math.round(13.12 + 0.6215 * temp - 11.37 * Math.pow(windsp, 0.16) + 0.3965 * temp * Math.pow(windsp, 0.16));
-    }
-    else {
-        return "N/A";
-    }
-}
-function displayWindChill() {
-    const tempE = document.getElementById('temp');
-    const windspE = document.getElementById('windsp');
-    const windChillE = document.getElementById('windchill');
-    const temperature = parseFloat(tempE.textContent);
-    const windSpeed = parseFloat(windspE.textContent);
-    const windChill = windChillCalc(temperature, windSpeed);
-    windChillE.textContent = windChill !== "N/A" ? windChill + "°C" : "N/A";
-}
-window.addEventListener('load', displayWindChill);
+// Set the current year and last modified date in the footer
+const yearElement = document.getElementById("year");
+yearElement.textContent = new Date().getFullYear();
+
+const lastModifiedElement = document.getElementById("lastModified");
+lastModifiedElement.textContent = "Last Modified: " + document.lastModified;

@@ -1,1 +1,2 @@
-# wdd1313
+# wdd131
+Repo for WDD 131 course

@@ -1,77 +1,76 @@
+﻿/* Mobile-first styles for the Sweden page */
 :root {
-    --primary-color: #002D62;
-    --secondary-color: #CE1126;
-    --heading-font: "Oswald", sans-serif;
-    --body-font: "Outfit", sans-serif;
+  --primary-blue: #006aa7;
+  --primary-yellow: #fecc00;
+  --bg: #f0f4f8;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --header-bg: var(--primary-blue);
+  --header-text: #ffffff;
+  --footer-bg: #e5e7eb;
+  --font-body: 'Source Sans Pro', sans-serif;
+  --font-heading: 'Merriweather', serif;
 }
-.hero img {
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  display: block;
-}
-.data, .weather {
-    position: absolute;
-    background-color: rgba(187, 221, 237, 0.7);
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: var(--body-font);
-}
-.data {
-    top: 30%;
-    left: 3%;
-    width: 300px;
-}
-.weather {
-    top: 80%;
-    right: 3%;
-    width: 300px;
-}
-.weather h2::after {
-    position: absolute;
-    font-size: 30px;
-    top: 13%;
-    right: 10%;
-    content: "🌤️";
-}
-.weather-icon {
-    display: none;
-}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
 body {
-    font-family: var(--body-font);
-    font-size: large;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    font-family: var(--heading-font);
-    padding: 20px 0;
+h1, h2 {
+    font-family: var(--font-heading);
 }
 
-h2 {
-    font-family: var(--heading-font);
-    background-color: var(--secondary-color);
-    color: white;
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+.site-header {
+  padding: 1rem;
+  text-align: center;
+  background: var(--header-bg);
+  color: var(--header-text);
 }
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    font-family: var(--heading-font);
-    text-align: center;
-    padding: 20px;
+.page-title { margin: 0; font-size: 1.75rem; }
+
+main { padding: 1rem; display: grid; gap: 1rem; }
+
+.hero { margin: 0; }
+.hero img { width: 100%; height: auto; display: block; border-radius: .75rem; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
 }
-.data-tab table, .weather-tab table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+.card h2 { margin-top: 0; text-align: center; border-bottom: 2px solid var(--primary-yellow); padding-bottom: 0.5rem; }
+
+.data-list { margin: 0; padding: 0; display: grid; gap: .5rem; }
+.data-list > div { display: grid; grid-template-columns: 8rem 1fr; gap: .75rem; align-items: center; }
+.data-list dt { font-weight: 600; color: var(--muted); }
+.data-list dd { margin: 0; }
+
+.weather { text-align: left; }
+.weather .icon {
+    display: block;
+    width: 48px; /* Set a specific size for the icon */
+    height: 48px;
+    margin: 0 auto 0.5rem; /* Center the icon */
 }
-.data-tab td, .weather-tab td {
-    padding: 10px;
+
+.site-footer {
+  background: var(--footer-bg);
+  padding: 1rem;
+  text-align: center;
+  color: var(--muted);
+  margin-top: 1rem;
 }
-.data-tab td:first-child, .weather-tab td:first-child {
-    font-weight: bold;
-    text-align: left;
+
+@media (max-width: 380px) {
+  .data-list > div { grid-template-columns: 1fr; }
 }

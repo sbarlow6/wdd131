@@ -1,120 +1,111 @@
+﻿/*
+  Author: Rafael Parra
+  WDD 131 - Week 01 Layout
+  Description: CSS Grid and Flexbox layout for basic web structure.
+*/
+
 :root {
-    --heading-font: "Oswald", sans-serif;
-    --body-font: "Outfit", sans-serif;
+    --platinum: #ccdbdc;
+    --non-photo-blue: #9ad1d4;
+    --non-photo-blue-2: #80ced7;
+    --cerulean: #007ea7;
+    --prussian-blue: #003249;
+    --font-family-main: 'Noto Sans', Roboto, sans-serif;
+    --font-family-accent: 'Lato', 'Noto Sans', Roboto, sans-serif;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
     grid-template-areas:
     "header header"
     "main aside"
     "footer footer";
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 120px 1fr 100px;
+    font-family: var(--font-family-main), serif;
+    background: var(--platinum);
+    color: var(--prussian-blue);
+    line-height: 1.3;
 }
+
 header {
     grid-area: header;
-    padding: 10px;
-}
-header h1 {
-  margin-bottom: 20px;
-}
-main{
-    grid-area: main;
-    font-family: var(--body-font);
-    align-items: center;
-    padding: 20px;
-}
-aside {
-    grid-area: aside;
-    padding: 20px;
-}
-footer {
-    grid-area: footer;
-    justify-items: center;
-    padding: 20px;
-}
-nav {
+    background: var(--prussian-blue);
+    color: var(--platinum);
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    background-color: black;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-}
-header, footer {
-    font-family: var(--heading-font);
-    background-color: rgb(62, 60, 60);
-    color: white;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "main aside"
-    "footer footer";
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  font-family: Georgia, serif;
-}
-
-header {
-  grid-area: header;
-  background-color: #333;
-  color: white;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header h1 {
-  padding: 20px;
+    padding: 0 2rem;
 }
 
 nav {
-  background-color: #000;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  padding: 15px 0;
+    background: var(--prussian-blue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 48px;
+    margin-top: 16px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 0;
+    gap: 0;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: var(--platinum);
+    text-decoration: none;
+    font-family: var(--font-family-accent), serif;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--cerulean);
+    border-bottom: 2px solid var(--non-photo-blue-2);
 }
 
 main {
-  grid-area: main;
-  background-color: #ccc;
-  padding: 20px;
+    grid-area: main;
+    background: var(--non-photo-blue);
+    border-left: 4px solid var(--cerulean);
+    padding: 2rem;
+    font-size: 1.4rem;
+    color: var(--prussian-blue);
 }
 
 aside {
-  grid-area: aside;
-  background-color: white;
-  padding: 20px;
+    grid-area: aside;
+    background: var(--platinum);
+    padding: 2rem;
+    font-size: 1.4rem;
+    border-left: 4px solid var(--cerulean);
+    color: var(--prussian-blue);
 }
 
 footer {
-  grid-area: footer;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    grid-area: footer;
+    background: var(--prussian-blue);
+    color: var(--platinum);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: var(--font-family-accent), serif;
+    border-top: 2px solid var(--cerulean);
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+.flag-caption {
+    font-size: 0.9rem;
+    line-height: 1.2;
 }

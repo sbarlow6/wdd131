@@ -1,99 +1,63 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominican Republic web page</title>
-    <meta name="author" content="Crhistan Neftali Castro Melo">
-    <meta name="description" content="Dominican Republic web page">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
-    <script src="scripts/place.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover Sweden</title>
+    <meta name="description" content="A responsive single page about Sweden with data and weather sections.">
+    <meta name="author" content="Rafael Parra">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 800px)">
 </head>
 <body>
-    <header>
-        <h1>Dominican Republic</h1>
+    <header class="site-header">
+        <h1 class="page-title">Sweden</h1>
     </header>
+
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-                <img src="images/hero-large.webp" alt="Enriquillo Lake" width="1500" height="750">
-            </picture>
-        </div>
-        <section class="data">
-            <h2>Data</h2>
-            <div class="data-tab">
-                <table>
-                    <tr>
-                        <td><strong>Area:</strong></td>
-                        <td>48,671 km²</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Population:</strong></td>
-                        <td>11,532,151</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Capital:</strong></td>
-                        <td>Santo Domingo</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Language:</strong></td>
-                        <td>Spanish</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Currency:</strong></td>
-                        <td>Dominican Peso</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Time Zone:</strong></td>
-                        <td>UTC-4:00</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Calling Code:</strong></td>
-                        <td>+1</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Internet TLD:</strong></td>
-                        <td>.do</td>
-                    </tr>
-                </table>
-            </div>
+        <figure class="hero">
+            <img src="images/sweden_background.webp"
+                 srcset="images/sweden_background-small.webp 500w, images/sweden_background-medium.webp 800w, images/sweden_background.webp 1600w"
+                 sizes="(max-width: 800px) 100vw, 1100px"
+                 alt="Stockholm, Sweden waterfront with colorful buildings" width="2070" height="1380" loading="eager">
+            <figcaption class="sr-only">Old Town in Stockholm, Sweden</figcaption>
+        </figure>
+
+        <section class="info card" aria-labelledby="data-heading">
+            <h2 id="data-heading">Data</h2>
+            <dl class="data-list">
+                <div><dt>Capital</dt><dd>Stockholm</dd></div>
+                <div><dt>Region</dt><dd>Northern Europe</dd></div>
+                <div><dt>Language</dt><dd>Swedish</dd></div>
+                <div><dt>Currency</dt><dd>Swedish krona (SEK)</dd></div>
+                <div><dt>Population</dt><dd>10.5 million (approx.)</dd></div>
+                <div><dt>Known for</dt><dd>Design, nature, archipelago, northern lights</dd></div>
+            </dl>
         </section>
-        <section class="weather">
-            <h2>Weather</h2>
-            <div class="weather-icon">
-                <img src="images/weather-icon.svg" alt="Weather icon">
-            </div>
-            <div class="weather-tab">
-                <table>
-                    <tr>
-                        <td><strong>Temperature:</strong></td>
-                        <td><span id="temp">26</span>°C</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Conditions:</strong></td>
-                        <td><span>Very Cloudy</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wind:</strong></td>
-                        <td><span id="windsp">5</span>km/h</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wind Chill:</strong></td>
-                        <td><span id="windchill"></span></td>
-                    </tr>
-                </table>
-            </div>
+
+        <section class="weather card" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Weather</h2>
+            <img src="images/weather-icon.svg" alt="Partly cloudy icon" class="icon">
+            <dl class="data-list">
+                <div><dt>Condition</dt><dd>Partly cloudy</dd></div>
+                <div><dt>Temperature</dt><dd>14°C</dd></div>
+                <div><dt>Wind</dt><dd>12 km/h</dd></div>
+                <div><dt>Humidity</dt><dd>73%</dd></div>
+                <div><dt>Wind Chill</dt><dd id="windchill"></dd></div>
+            </dl>
         </section>
     </main>
-    <footer>
-        <p><span id="currentyear"></span> 🌊 Crhistan Castro Melo 🌊 Santo Domingo, Dominican Republic</p>
-        <p id="lastModified"></p>
+
+    <footer class="site-footer">
+        <p>
+            <span id="year"></span> • Rafael Parra • Stockholm, Sweden
+        </p>
+        <p id="lastModified" aria-live="polite"></p>
     </footer>
+
+    <script src="scripts/place.js" defer></script>
 </body>
 </html>

@@ -1,74 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
-    <meta name="Description" content="Image album of some temples around the world.">
-    <meta name="Author" content="Crhistan Castro">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WDD 131 – Temples Album – Rafael Parra</title>
+    <meta name="description" content="WDD 131 – Temples picture album with responsive design, hamburger menu, and filters." />
+    <meta name="author" content="Rafael Parra" />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 700px)" />
 </head>
 <body>
-    <header>
-        <h1>Temple Album</h1>
-        <button id="menu">☰</button>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
+    <header class="site-header">
+        <div class="brand">
+            <h1>Temple Album</h1>
+        </div>
+        <button id="menu" class="menu" aria-label="Menu" aria-expanded="false" aria-controls="navlist">☰</button>
+        <nav class="site-nav">
+            <ul id="navlist" class="nav-list">
+                <li><a href="#" data-filter="all" class="active">All</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <h2>Home</h2>
-        <div class="img-grid">
-            <figure>
-                <img src="images/santo-domingo-dominican-republic-temple_11zon.webp" alt="Santo Domingo, Dominican Republic Temple" width="600" height="400">
-                <figcaption>Santo Domingo, Dominican Republic Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/merida-mexicotemple_11zon.webp" alt="Merida, Mexico Temple" width="600" height="400">
-                <figcaption>Merida, Mexico Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/mexico-city-temple_11zon.webp" alt="Mexico City Temple" width="600" height="400">
-                <figcaption>Mexico City Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rexburg-temple_11zon.webp" alt="Rexburg, Idaho Temple" width="600" height="400">
-                <figcaption>Rexburg, Idaho Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/sao-paulo-brazil-temple_11zon.webp" alt="Sao Paulo, Brazil Temple" width="600" height="400">
-                <figcaption>Sao Paulo, Brazil Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/slctemple_11zon.webp" alt="Salt Lake City, Utah Temple" width="600" height="400">
-                <figcaption>Salt Lake City, Utah Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/san_juan_puerto_rico_temple_11zon.webp" alt="San Juan, Puerto Rico Temple" width="600" height="400">
-                <figcaption>San Juan, Puerto Rico Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Rome-Temple_11zon.webp" alt="Rome, Italy Temple" width="600" height="400">
-                <figcaption>Rome, Italy Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Sapporo-Japan_11zon.webp" alt="Sapporo, Japan Temple" width="600" height="400">
-                <figcaption>Sapporo, Japan Temple</figcaption>
-            </figure>
-        </div>
+        <h1>Temple Album</h1>
+        <section class="gallery" id="gallery" aria-live="polite"></section>
     </main>
-    <footer>
-        <p><span id="currentyear"></span> 🌊 Crhistan Castro Melo 🌊 Santo Domingo, Dominican Republic</p>
+
+    <footer class="site-footer">
+        <p>
+            <span id="year"></span> • Rafael Parra
+        </p>
         <p id="lastModified"></p>
     </footer>
+
+    <script src="scripts/temples.js" defer></script>
 </body>
 </html>
